@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appendix</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      margin: 2em;
+      color: #111;
+    }
+    h1 {
+      font-size: 1.3em;
+      margin-bottom: 1em;
+    }
+    .table-wrapper {
+      overflow-x: auto;
+    }
+    table {
+      border-collapse: collapse;
+      white-space: normal;
+      word-break: break-word;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 5px 8px;
+      vertical-align: top;
+      overflow: hidden;
+    }
+    thead th {
+      background-color: #333;
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      white-space: nowrap;
+    }
+    tbody tr:hover td {
+      filter: brightness(0.93);
+    }
+    a {
+      color: #1a0dab;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Appendix</h1>
+
+  <p>This page contains the appendix to the article <em>The Illusion of Control in Text-to-Music Prompting: a Qualitative Analysis</em> by Riccardo Ancona. The corpus of generated lyrics can be found <a href="lyrics.html">here</a>.</p>
+
+  <div class="table-wrapper">
+  <table style="table-layout:auto;">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Prompt</th>
+    <th>Textual prompt</th>
+    <th>Genre evaluation</th>
+    <th>Tempo accuracy</th>
+    <th>Presence of required instrument</th>
+    <th>Lyrics evaluation</th>
+    <th>Vocal evaluation</th>
+    <th>Adherence to requested musical features</th>
+    <th>Adherence to requested production style</th>
+    <th>Adherence to qualitative adjectives</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio001.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio001.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Tribal Ambient, 55 bpm, bansuri, polyrhytmic, cassette recording, lush.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">Even though Tribal Ambient is supposed to contain some percussions, the generated track relies too heavily on rhythm and not enough in the timbral development of textures. It sounds more like new-agey afrohouse than tribal ambient, both stylistically and formally.</td>
+    <td style="background-color:#c6efce;">Slightly lower bpm, but good approximation.</td>
+    <td style="background-color:#c6efce;">The melodic phrasing is not necessarily adherent to what is idiomatic on a bansuri, but the timbre is similar.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">The rhythm is syncopated and contains patterns that might suggest a 3 against 2, but there is no explicit polyrhythm anywhere in the piece.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a cassette recording.</td>
+    <td style="background-color:#ffeb9c;">This might be defined lush, but I think the bansuri ornamentation and the percussive sounds are not diversified enough throughout the piece to properly convey a “lush” feeling.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio002.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio002.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Dark Ambient, shofar, locrian mode, cathedral reverb, desolate.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">It is not dark ambient as it develops into a beat-based piece. Additionally, it revolves around melodic phrases sung by a female voice. The voice style resembles cinematic, stereotypical representations of middle-eastern, mysterious singing, which has probably been produced by the words “shofar” and “locrian” in the prompt. The beat emerging halfway in the track is a typical downtempo / trip-hop beat, which has nothing to do with Dark Ambient.</td>
+    <td style="background-color:#ffc7ce;">No tempo specified, Dark Ambient has no intrinsic pulse. Yet, the model wrongly assumes a fixed tempo.</td>
+    <td style="background-color:#ffc7ce;">Nothing similar to a shofar is present in the piece.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">It is not locrian as it uses a just fifth instead of a diminished one.</td>
+    <td style="background-color:#c6efce;">The bass pad in the intro, as well as the voice, are heavily processed with a cathedral reverb. It sounds slightly too clean, but it definitely follows the request.</td>
+    <td style="background-color:#ffeb9c;">It feels more mysterious than desolate, but I feel there is some sort of semantic connection nevertheless.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio003.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio003.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Jug Band, 110 bpm, kazoo, improvisation, rehearsal take, humorous.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">By definition, a jug band requires someone playing a jug, with the occasional presence of other self-built instruments. The instrumentation in this piece has instead a trombone on the lower range, a clarinet and a cornet on the upper range: it is, even in the structure of the piece and in the ragtime-infused phrasing, an early dixieland piece. Some dixieland ensembles of the 1910s and 20s had a circus-like vibe that is very similar to the one shown here.</td>
+    <td style="background-color:#c6efce;">It is precisely 110 bpm. Even too regular for a Jug Band performance.</td>
+    <td style="background-color:#ffc7ce;">No kazoo in the piece.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">Nothing suggests improvisation, if not for the short clarinet solo. The structure of the piece is so much designed on predefined call and response gestures that it does not convey any improvisational feeling.</td>
+    <td style="background-color:#ffc7ce;">It sounds as a proper studio recording, not as a rehearsal take.</td>
+    <td style="background-color:#c6efce;">It properly mimics the humorous connotation of an early twentieth century instrumental ensemble associated with circus, vaudeville, and street entertainment.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio004.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio004.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Electric Texas Blues, 125 bpm, harmonica, husky elder male singing, dorian solo phrasings, raw production, resentful.</td>
+    <td style="background-color:#ffffff;">A resentful Electric Texas Blues song about learning humility after pride.</td>
+    <td style="background-color:#ffeb9c;">It is indeed Electric Blues, but it is stylistically closer to Chicago Blues than to Texas Blues.</td>
+    <td style="background-color:#ffeb9c;">It is 121 bpm instead of 125.</td>
+    <td style="background-color:#c6efce;">Yes, there is an harmonica.</td>
+    <td style="background-color:#ffc7ce;">The lyrics are completely absurd, as they entirely revolve about a discussion about what is Texas Blues and what is not, which is meta-textual and surreal, at least in the way it is put in this text. It is not clear why just discussing what’s the style of Texas Blues with another musician would have made the singer “lost it all” and “learn the lesson of his pride”, becoming “a humble man”. The metrics are very irregular. It does not feel resentful.</td>
+    <td style="background-color:#ffc7ce;">It does not sound like an elder male. Additionally, there is a strong dissonance between what the singer is saying and the way it is delivered vocally. The voice sounds AI-generated in many parts.</td>
+    <td style="background-color:#ffc7ce;">All the solo phrasings are pentatonic, there is no trace of dorian scale.</td>
+    <td style="background-color:#ffc7ce;">The production is not raw.</td>
+    <td style="background-color:#ffc7ce;">It does not feel resentful: the music is upbeat, the singing style is the stereotypical boastful blues singing, and the lyrics do not convey any resentment.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio005.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio005.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Piedmont Blues, 73 bpm, slide guitar, deep contralto singing, quarter tone blue notes, phonograph recording, elegiac.</td>
+    <td style="background-color:#ffffff;">An elegiac Piedmont Blues song about a forbidden romance.</td>
+    <td style="background-color:#ffc7ce;">It has absolutely nothing to do with Piedmont Blues, which is supposed to be purely acoustic, just guitar and voice, with typical Appalachian singing from the early 1900s. Instead, this piece is a pop song with blues and country influences, something in-between Americana and Southern Gothic music flattened for unattentive radio listening. It even has an electronic beat and the ending has a synthesized bass. The second verse also features offbeat guitar chords that are really out of the required style.</td>
+    <td style="background-color:#c6efce;">Actually 71 bpm, but very close.</td>
+    <td style="background-color:#ffeb9c;">It is not entirely clear if the sliding phrases come from a slide guitar or a standard electric guitar using a slide. The articulation is closer to a standard guitar, but the timbre is sometimes very close to a slide guitar.</td>
+    <td style="background-color:#ffeb9c;">The lyrics are appropriate in the way they deal with the theme of forbidden romance in a Southern setting. However, they tell a story that has no continuity. The female protagonist engages in a forbidden relationship with a man that lefts her “for dead”, but then in the following verse it is the lover that has “a hole in his chest”. Who killed the man? Did he try to kill her first? It does not feel intentionally vague, it simply feels disjointed.</td>
+    <td style="background-color:#ffc7ce;">A “deep contralto singing” is by definition a female voice, but here the model chose a male singer with a stereotypical and dramatic country pop style.</td>
+    <td style="background-color:#ffc7ce;">Even in the sliding phrases, there is no trace of quarter tone notes, the sound is always perfectly tuned to the nearest semitone.</td>
+    <td style="background-color:#ffc7ce;">This sounds like a modern studio production, no trace of phonographs.</td>
+    <td style="background-color:#ffc7ce;">There is nothing elegiac in this piece.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio006.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio006.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Zamrock, 130 bpm, silimba xylophone, playful male vocals, polymetric patterns, mono recording, hypnotic.</td>
+    <td style="background-color:#ffffff;">An hypnotic Zamrock song in Zambian English about a father teaching patience.</td>
+    <td style="background-color:#ffc7ce;">Zamrock is a type of hard rock music from the 1970s with Zambian folk influences. This piece has no trace of rock music at all, it sounds as a Pop Folk song from Central Africa. The instrumentation is also not peculiarly Zambian.</td>
+    <td style="background-color:#c6efce;">132 bpm instead of 130: very close.</td>
+    <td style="background-color:#ffeb9c;">There is a wooden xylophone instrument in the piece, but it does not seem to be tuned as a silimba would, and its range is a bit higher than a silimba would sound.</td>
+    <td style="background-color:#c6efce;">While there is nothing intrinsically Zambian in the language employed, it mimics Central/Eastern African English quite convincingly. The requested theme is properly articulated in the lyrics, using metaphors and proverb-like expressions that fit the context.</td>
+    <td style="background-color:#ffeb9c;">The vocals are indeed playful, with alternating calls and responses between a solo voice and a small choir. However, they sound AI-generated and sometimes the harmonizations sound odd.</td>
+    <td style="background-color:#c6efce;">It contains polymetric patterns as requested.</td>
+    <td style="background-color:#ffc7ce;">It is stereo, not mono as required.</td>
+    <td style="background-color:#c6efce;">It is quite hypnotic.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio007.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio007.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Chinese Literati Music, slow fluctuating tempo, guqin, complex glissando phrases, outdoor recording, sophisticated.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">Chinese Literati Music is one of the highest and most refined art forms of feudal China, typically revolving around subtle guqin solo performances. The generated piece is almost offensive: it is a new age Chinese-like piece that you would hear in a massage center to convey a generic oriental atmosphere. Even if fundamentally based on the Chinese pentatonic, the piece is harmonically Western and follows a new age arrangement that has nothing to do with Chinese Classical Music.</td>
+    <td style="background-color:#ffc7ce;">No bpm specified in the prompt: Chinese Literati Music has a fluctuating tempo. The model imposes instead a fixed tempo.</td>
+    <td style="background-color:#ffeb9c;">There is a guqin, but it plays very unrealistic phrases with extremely fast trills. There is not so much articulation in the pitch contour, which is of paramount relevance in guqin playing. The attack transient of many notes feels innatural and mechanic.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">There are no complex glissando phrases. There is barely any glissando.</td>
+    <td style="background-color:#ffc7ce;">It is not an outdoor recording.</td>
+    <td style="background-color:#ffc7ce;">If it sounds like a piece for a massage center, it is clear that it has nothing sophisticated.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio008.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio008.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Gagaku, slow fluctuating tempo, Biwa, dramatic decelerando gestures, broadcast recording, solemn.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">Similarly to the previous piece, this is a new age Eastern-like track that bears no resemblance to the request genre. It is based on Western functional harmony with dramatic minor cadenze and it even has a string section. Clearly, this has nothing to do with Japanese Gagaku theatre.</td>
+    <td style="background-color:#ffc7ce;">No bpm specified in the prompt: Gagaku has a fluctuating tempo. The model imposes instead a fixed tempo.</td>
+    <td style="background-color:#ffc7ce;">There is a string instrument in the piece, but it sounds like a synthetic harp; surely not a biwa.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">There are no dramatic decelerando gestures, as the piece has a fixed tempo and is not gestural.</td>
+    <td style="background-color:#ffc7ce;">It sounds like a studio production with overdubs, not a broadcast recording.</td>
+    <td style="background-color:#ffc7ce;">It does not feel solemn, but rather melancholic in a very superficial manner.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio009.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio009.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Min’yō, free irregular rhythm, shamisen, intimate soprano singing with female choir, call and response, tape recording, haunting.</td>
+    <td style="background-color:#ffffff;">A Min’yō piece in Japanese with call and response singing about the loneliness of a travel crossing mountains.</td>
+    <td style="background-color:#ffc7ce;">It sounds as a contemporary romantic ballad and it is based on Western functional harmony, contrarily to Min’yō.</td>
+    <td style="background-color:#ffc7ce;">With the exception of the final rallentando, the  tempo is fixed to 85 bpm and the rhythm is very regular.</td>
+    <td style="background-color:#c6efce;">There is a shamisen, although its role is merely decorative – the piece is fundamentally a piano ballad.</td>
+    <td style="background-color:#ffeb9c;">The lyrics are compatible with Min’yō, but philologically inaccurate: the language employed is contemporary and the way the concept are exposed is more philosophical than metaphorical, as a Min’yō text would be. The theme of the prompt has been respected.</td>
+    <td style="background-color:#ffeb9c;">The voices are more declamatory than intimate, but at least the model respected the request of soprano singing with female choir.</td>
+    <td style="background-color:#c6efce;">The call and response structure is respected both in the lyrics and in the relation between the solo singer and the choir.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a tape recording.</td>
+    <td style="background-color:#ffc7ce;">It does not sound haunting at all.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio010.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio010.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Gagok, geomungo, crisp female singing, frequent upward glissando gestures, binaural recording, serene.</td>
+    <td style="background-color:#ffffff;">A serene Gagok piece about the passing of seasons.</td>
+    <td style="background-color:#ffc7ce;">Gagok is a form of Korean court classical song; this piece is instead a romantic pop ballad with piano and vocals, revolving around Western functional harmony.</td>
+    <td style="background-color:#ffc7ce;">No bpm specified in the prompt: Gagok has cyclical tempo variations. Here, instead, the bpm is fixed at 67.</td>
+    <td style="background-color:#ffc7ce;">There is no geomungo, only piano and electronic strings.</td>
+    <td style="background-color:#ffc7ce;">The generated lyrics resemble a contemporary pop song. Additionally, the mood conveyed by the text is nostalgic, while the prompt asked for a serene mood.</td>
+    <td style="background-color:#ffeb9c;">The voice is feminine and crisp as required, but it has nothing to do with Gagok or Korean classical singing.</td>
+    <td style="background-color:#ffc7ce;">There are not glissando gestures anywhere in the piece.</td>
+    <td style="background-color:#ffc7ce;">The mix is stereo in the same way of the previous pieces, it is not seem to be particularly designed for binaural listening.</td>
+    <td style="background-color:#ffc7ce;">It is nostalgic, not serene.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio011.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio011.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Vietnamese Opera, đàn nguyệt moon lute, theatrical male and female vocals, duet, VHS audio, exaggerated emotivity.</td>
+    <td style="background-color:#ffffff;">A passage of a Vietnamese Opera libretto in Vietnamese in which a male and a female singers are dialoguing about royal court intrigues with exaggerated emotivity.</td>
+    <td style="background-color:#ffc7ce;">Once again, a romantic pop ballad instead of the required genre. In this case it feels even more absurd, as the two singers behave like in a love song, but they are singing about a very dramatic royal court intrigue.</td>
+    <td style="background-color:#ffc7ce;">No bpm specified in the prompt: Vietnamese Opera has a woodblock instrument setting the fluctuation of tempo during pieces. However, this piece has a fixed tempo and even a contemporary pop drum.</td>
+    <td style="background-color:#ffeb9c;">There is a lute in the piece, but its timbre is not particularly close to the đàn nguyệt.</td>
+    <td style="background-color:#ffeb9c;">The text is stylistically correct, as it uses an historically appropriate vocabulary; yet, it does not follow any fixed metric scheme. Vietnamese Opera employs strictly defined metric verses.</td>
+    <td style="background-color:#ffc7ce;">The vocal style has nothing to do with Vietnamese Opera. The model properly defined two opposing voices, one male and the other female. However, the way they are singing and the vocal melody contrasts terribly with the content of the lyrics.</td>
+    <td style="background-color:#c6efce;">It is in fact a vocal duet, despite not being operatic.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as VHS audio.</td>
+    <td style="background-color:#ffeb9c;">“Exaggerated emotivity” was meant to refer to a theatrical mode of vocal exposition and instrumentation, while here it is rather intended as sentimentalism. It sounds more superficial than exaggerated.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio012.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio012.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Andalusian Classical Music, 92 bpm, qanun, phrygian melodies, unplugged session, melancholic.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffeb9c;">This sounds like a “world music” version of Andalusian Classical Music. The instrumentation is partially compatible with this type of music, with the exception of the bass, initially sounding like a double bass but slowly transforming into an electric bass. The introductive oud phrasings sound plausible, but then the development follows a structuring that is largely simplified and free compared to actual Andalusian Classical Music.</td>
+    <td style="background-color:#c6efce;">Andalusian Classical Music has shifting tempo and metrics, but some sections can have a fixed underlying pulse. In this case, the introduction has free time and afterwards the piece settles at around 95 bpm, more or less as requested.</td>
+    <td style="background-color:#ffc7ce;">No traces of qanun.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">I did not find any melody matching the Phrygian mode. In this case the model is following a maqam, which is appropriate for this type of music but does not follow the prompt.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as an unplugged session: the bass is clearly electrified in the ending section. Everything sounds heavily processed with reverbs, which contradicts the idea of an unplugged session.</td>
+    <td style="background-color:#ffc7ce;">It does not sound melancholic. On the contrary, it sound lively.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio013.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio013.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Sawt, slow fluctuating tempo, oud, warm-toned melismatic male singing, maqam rast, lo-fi radio session, intimate.</td>
+    <td style="background-color:#ffffff;">An intimate Sawt piece in Gulf Arabic about the communality of maritime life and the hardship it requires.</td>
+    <td style="background-color:#ffc7ce;">This is a folk pop ballad rather than what required. Sawt is a form of Arabic Classical Music based on maqams, while here the structure is built upon Western minor triads. The instrumentation is also incompatible with Sawt.</td>
+    <td style="background-color:#ffc7ce;">Sawt has flexible timing, while here the piece is stuck around 71 bpm.</td>
+    <td style="background-color:#ffc7ce;">There is a string instrument but it sounds more like an acoustic guitar than as an oud, and it is basically playing minor arpeggios.</td>
+    <td style="background-color:#ffeb9c;">The lyrics are structured in song-form, while original Sawt has its own structure based on metrically-rigid stanzas. It feels like a modern composition inspired by Sawt, rather than a historical text.</td>
+    <td style="background-color:#c6efce;">The voice is warm-toned and melismatic as required, and the tone fits the lyrics.</td>
+    <td style="background-color:#ffc7ce;">There is no maqam rast in this piece.</td>
+    <td style="background-color:#ffc7ce;">It does not sound like a lo-fi radio session.</td>
+    <td style="background-color:#c6efce;">It sounds intimate, indeed.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio014.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio014.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Shashmaqam, shifting tempo around 100 bpm, tanbur, breathy male voice storytelling, 3/4 meter, handheld recorder, thoughtful.</td>
+    <td style="background-color:#ffffff;">A thoughtful Shashmaqam piece in Uzbek about the divine love under a Sufi perspective.</td>
+    <td style="background-color:#ffc7ce;">This is the most striking error I have encountered so far: Shashmaqam is a form of traditional Uzbek epic storytelling, but here the model decided to generate a Moombahton piece.</td>
+    <td style="background-color:#ffeb9c;">It is around 100 bpm, but it is not shifting at all.</td>
+    <td style="background-color:#ffc7ce;">There is no tanbur, the piece is just voice and percussions.</td>
+    <td style="background-color:#ffc7ce;">The lyrics resemble contemporary folk-fusion rather than Shashmaqam. There is a mention to Sufi poetry (“Dard-u alam-u”) but the structure and the form of the text are incompatible with the request.</td>
+    <td style="background-color:#ffc7ce;">There is an incredible conceptual dissonance between the lyrics repeating phrases in poetic Uzbek such as “To you, it is heavy / difficult for you […] All pain and suffering and mind and thought, My beloved” and the playful, excited bass male choir that is singing as if it was a Caribbean song for beach dancing.</td>
+    <td style="background-color:#ffc7ce;">It is a 4/4 meter, not 3/4.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as if it was recorded by an handheld microphone, it sounds like a studio production.</td>
+    <td style="background-color:#ffc7ce;">It is definitely not thoughtful.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio015.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio015.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Pìobaireachd, great Highland bagpipe, polyphonic, vintage production, lamenting.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">The piece here is a generic bagpipe dance, while Pìobaireachd is a precise form of Scottish art music. It is too fast, too festive, and it does not follow its structure. Throughout most of the piece there is a strange electronic pad harmony that is often unrelated to what the bagpipe is playing. Could it be that the complex harmonic spectra of bagpipes is particularly problematic to represent for the model?</td>
+    <td style="background-color:#ffc7ce;">No tempo specified: Pìobaireachd has no fixed tempo. Here, instead, there is a steady beat, whose speed changes across sections.</td>
+    <td style="background-color:#ffeb9c;">The model is clearly trying to synthesize a great Highland bagpipe, but the resulting timbre is not always very effective. In some parts, it almost sounds like a fiddle.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">It is not polyphonic, despite the strange harmonic blob in the background.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a vintage production, this sounds quite obviously AI-generated and contains many strange artifacts.</td>
+    <td style="background-color:#ffc7ce;">This is not even remotely “lamenting”.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio016.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio016.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Khayal, sarangi, virtuosic velvety female singing, raag bhimpalasi, smartphone recording, peaceful.</td>
+    <td style="background-color:#ffffff;">A peaceful poem in Braj Basha Hindi about divine devotion for a Khayal performance.</td>
+    <td style="background-color:#ffc7ce;">This sounds like a modern devotional Hindi song. It does not show any structural or musical feature related to Khayal. The singing and the rhythmic talas have nothing to share with it.</td>
+    <td style="background-color:#ffc7ce;">No tempo specified in the prompt: tempo varies in Khayal throughout the performance. Here, instead, there is a fixed 82 bpm.</td>
+    <td style="background-color:#c6efce;">Despite being present only in a brief part of the piece, a sarangi is featured.</td>
+    <td style="background-color:#ffeb9c;">The language and the verses are compatible with Khayal, but the structure is rather organized as a song form.</td>
+    <td style="background-color:#ffc7ce;">The voice is velvety but not virtuosic, and the singing style is very far from Khayal.</td>
+    <td style="background-color:#ffc7ce;">Even if we mean the raag just as a pitch set (which is not in Hindustani Classical Music), this piece sounds more myxolydian than raag bhimpalasi.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a smartphone recording, it sounds as a studio production.</td>
+    <td style="background-color:#c6efce;">Both the text and the music are quite peaceful.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio017.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio017.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Burmese Classical Music, frequent tempo changes, pat waing, heterophonic, overdriven preamp, festive.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">It seems like this prompt confused the model. It starts with a very strange free-time harp introduction, very glitched and chromatically chaotic, to then move towards a beat-based new-agey instrumental ballad with harp, 1980s drums and synthesized strings. This, clearly, has nothing to do with Burmese Classical Music.</td>
+    <td style="background-color:#ffc7ce;">I required “frequent tempo changes” because they are idiomatic in Burmese Classical Music. The introduction of the piece has a variable tempo, but then it settles to a fixed beat, which is incompatible with the request.</td>
+    <td style="background-color:#ffc7ce;">There is no pat waing anywhere in the piece.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">In cerimonies, Burmese Classical music has a vocalist, but recorded Burmese Classical Music is largely instrumental; thus I did not require vocals.</td>
+    <td style="background-color:#ffc7ce;">It is not heterophonic, it follows the classic pop chord + melody system.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as if it was coming from an overdriven preamp.</td>
+    <td style="background-color:#ffeb9c;">I guess the term “festive” could be applied to this music too, even though I did not mean it in this sense. This music could be played as a background for a collective gathering, though it is definitely not what you would year in Myanmar festivities.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio018.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio018.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Gamelan Jegog, very fast fluctuating tempo, frequent dynamic variations, distorted signal, energetic.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">This is tremendously far from the request. Instead of a gamelan jegog ensemble, this track contains a strange kind of electronic house music with kitschy lead sounds. I would tempted to attribute this error to Funkot and other styles of Indonesian club music that might occasionally be infused with sampled gamelan sounds, but the rhythm of this track is straight, contrarily to those types of music. It almost sounds as a videogame soundtrack.</td>
+    <td style="background-color:#ffc7ce;">Instead of getting a fast fluctuating tempo, the model generated a fixed fast tempo (around 177 bpm).</td>
+    <td style="background-color:#ffc7ce;">No instrument is specified in the prompt because the genre name already implies a specific instrumental ensemble. There is no sign of gamelan jegog sounds though, not even in the form of samples. Some sounds in the intro might recall metallic gamelans; jegog is a bamboo gamelan, though.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">There are frequent rhythmic breakdowns, but they only act as punctuation in the piece, whose dynamic remains otherwise very static. Most of the piece is playing at the same forte dynamic.</td>
+    <td style="background-color:#ffc7ce;">The sound does not feel distorted, but rather digital and clean.</td>
+    <td style="background-color:#c6efce;">It is without any doubt energetic, even if in a completely different way than expected.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio019.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio019.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Gamelan Semar Pegulingan, dramatic tempo shifts, shimmering ombak detuning, ambient room recording, sweet and elegant.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">Here we have a new age ballad piece with a functional harmonic progression based on resolving an harmonic minor scale. There is a background rhythm that might come from bachata, while the lead instrument sounds as a digital keyboard mimicking a steel drum or some other type of idiophone (not resembling any instrumental in a gamelan ensemble). This is thus extremely far from Gamelan Semar Pegulingan in any sense.</td>
+    <td style="background-color:#ffc7ce;">Gamelan Semar Pegulingan is characterized by dramatic tempo shifts, which is what has been requested to the model. In this piece the tempo is fixed at around 70 bpm.</td>
+    <td style="background-color:#ffc7ce;">No instrument is specified in the prompt because the genre name already implies a specific instrumental ensemble. There is no trace of any of those instruments in the piece.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">No trace of shimmering ombak detunings, which are strictly related to the presence of the gamelan.</td>
+    <td style="background-color:#ffc7ce;">The digital reverb superimposed on everything really makes it hard to perceive the piece as an “ambient room recording”.</td>
+    <td style="background-color:#ffeb9c;">It is sweet, maybe even too much. Personally, I do not find it to be elegant at all.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio020.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio020.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Pinpeat, rapid variable tempo, roneat xylophones, 2/4, hall reverb, majestic.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">The Pinpeat is a traditional Khmer ensemble playing royal court music. What can be heard in the piece generated by the model is instead a very distorted version of a comic carnival piece of Western light music of the late 19th century, something on the line of Le Carnaval des Animaux by Camille Saint-Saëns. The whole piece revolves around a fast, chromatic xylophone melody punctuated by strings gestures, as in the “Flight of the Bumblebee” by Nicolai Rimsky-Korsakov. Why the model ended up so far from Pinpeat? What is the relationship between these two types of music?</td>
+    <td style="background-color:#ffc7ce;">Pinpeat notion of tempo is flexible. Here the tempo is rapid but rather fixed.</td>
+    <td style="background-color:#ffeb9c;">There is a xylophone, but it does not sound as a roneat xylophone and it is tuned very differently.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">In some parts of the piece it is hard to define what is the meter, because the punctuation of the strings does not follow a regular pattern – it might be a 3/4, though. Afterwards, it settles to 4/4.</td>
+    <td style="background-color:#ffeb9c;">There is a strange reverb that is presumably trying to imitate the resonance of a physical space, but I would not call it a proper “hall reverb”.</td>
+    <td style="background-color:#ffc7ce;">This is comic, not majestic.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio021.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio021.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Tibetan Buddhist Chant, dungchen, low-pitched and controlled male choir, gradual dynamic crescendo, on-site recording, meditative.</td>
+    <td style="background-color:#ffffff;">A meditative sutra passage for Tibetan Buddhist Chant in Tibetan.</td>
+    <td style="background-color:#ffc7ce;">This piece does not resemble Tibetan Buddhist Chant neither formally nor vocally. It sounds as a new age devotional song. It alternates a solo voice and a choir; in some parts, the choir is unnaturally extended in time to the point that it morphs into an electronic bass pad sound: paradoxical and out-of-context. Note that also in this case the model structured the piece on the basis of an harmonic progression, despite Tibetan Buddhist Chant being typically based on a fixed drone emphasizing a single fundamental frequency.</td>
+    <td style="background-color:#ffc7ce;">No tempo specified in the prompt: Tibetan Buddhist Chant has no perceivable pulse. Yet, the generated piece has an implicit pulse that is too steady and too fast to match the request.</td>
+    <td style="background-color:#ffc7ce;">There is no dungchen in the piece.</td>
+    <td style="background-color:#ffeb9c;">Asking to generate a new Tibetan Buddhist Chant text is admittedly a strange request, as the repertoire is based on traditional mantras and sadhanas. The model tried to write something in that style and it managed to write a text in ancient Tibetan, making theological references that are compatible with the request. Yet, it superimposed a song form to it, even adding labels such as “[Verse 2]” and “[Chorus]”, which are highly contradictory. I cannot judge the metric coherence of the text compared to the tradition, as I am definitely not expert on Tibetan syllabification.</td>
+    <td style="background-color:#ffc7ce;">The prompt requested “low pitched and controlled male choir” in the style of Tibetan Buddhist Chant, but the obtained vocality is very different. There is a solo tenor voice that has nothing to do with Tibetan Buddhist Chant and rather resembles modern devotional Bhakti hymns from Northern India.</td>
+    <td style="background-color:#ffc7ce;">The piece already starts in forte. While there is some sort of incremental growth throughout the first section of the piece, as the choir reinforces the solo singer, this does not correspond to the request.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as an on-site recording of a Buddhist temple, it sounds as a studio recording with overdubbed electronic materials.</td>
+    <td style="background-color:#ffc7ce;">This is far too fast and has too wide dynamic variations to be defined “meditative”.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio022.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio022.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Lied, adagio, fortepiano, powerful tenor singing, minor tonality, room ambience, tragic.</td>
+    <td style="background-color:#ffffff;">A tragic German poem for a lied about letters never sent.</td>
+    <td style="background-color:#ffeb9c;">This is a dramatic contemporary pop ballad, not a Lied in the classical sense. While, when writing the prompt, I was referring to “Lied” in the sense of a classical German art song, the term can also be applied to songs in general.</td>
+    <td style="background-color:#ffc7ce;">This is andante, not adagio.</td>
+    <td style="background-color:#ffc7ce;">There is a piano in the piece, but it is not a fortepiano.</td>
+    <td style="background-color:#ffeb9c;">The lyrics match the theme but do not follow any clear structuring of the stanzas: there are sections with different number of verses, each one having a varying number of sillables.</td>
+    <td style="background-color:#ffeb9c;">It is indeed a powerful tenor voice, but the singing style – despite the exaggerated vibrato – is dramatic pop, not classical.</td>
+    <td style="background-color:#c6efce;">Yes, it is based in a minor tonality.</td>
+    <td style="background-color:#ffeb9c;">There is some sort of spatial resonance in the mix, but I would not define it a room ambience, as it sound very algorithmic.</td>
+    <td style="background-color:#ffeb9c;">It feels somewhat too energetic in some parts, but it is nevertheless tragic.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio023.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio023.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Zarzuela Barroca, andante, theorbo, soprano aria, 3/4 meter, single-mic recording, pastoral.</td>
+    <td style="background-color:#ffffff;">A pastoral soprano aria in Baroque Spanish for a Zarzuela barroca about the beauty of ordinary routines.</td>
+    <td style="background-color:#ffc7ce;">The vocal melody and the accompanying harmony does not fit Zarzuela Barroca, but rather a contemporary pop interpretation of it. The singing style is also off.</td>
+    <td style="background-color:#c6efce;">It is an andante and it has an expressive accelerando.</td>
+    <td style="background-color:#c6efce;">There is a theorbo playing continuo.</td>
+    <td style="background-color:#ffeb9c;">The text is surprisingly correct, as it is formed by two stanzas of four hexasyllables, which is not the most common metrical choice for zarzuela, yet plausible. The text is strangely interrupted on a section that is incorrectly termed “[Pre-Chorus]”. The required theme is properly represented in the text.</td>
+    <td style="background-color:#ffeb9c;">It is a soprano singer and it is some sort of aria, but the singing style is incorrect.</td>
+    <td style="background-color:#ffc7ce;">The tempo varies consistently, therefore the meter is dubious in some parts, but nowhere in the piece there is a perceivable sensation of a 3/4 meter.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a single-mic recording.</td>
+    <td style="background-color:#ffeb9c;">The lyrics are explicitly pastoral, but the music does not convey the same sensation.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio024.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio024.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Byzantine Chant, a cappella, choir, highly chromatic, studio recording, penitential.</td>
+    <td style="background-color:#ffffff;">A penitential psalm in Byzantine Greek.</td>
+    <td style="background-color:#ffc7ce;">While the singing might sound superficially appropriate to the request, there is a bass drone (in-between a low voice and a synthetized sound) that assumes an harmonic understanding of the piece; on the contrary, Byzantine Chant is inherently modal. The singing is also too fast paced. The overall sensation is that of a cinematic, new age representation of what Byzantine Chant is supposed to sound like, rather than the proper liturgical practice.</td>
+    <td style="background-color:#ffc7ce;">No tempo specified in the prompt. Yet, this is too fast for Byzantine Chant.</td>
+    <td style="background-color:#ffc7ce;">Byzantine Chant is purely vocal, while the model generated a bass pad as a drone.</td>
+    <td style="background-color:#ffeb9c;">The lyrics consist of a prose-poetry that is metrically weird but can presumably be employed in the context of Byzantine Chant. It properly mimics penitential orthodox prayers, even if the accentual patterns appear to be random.</td>
+    <td style="background-color:#ffeb9c;">Too fast and rhythmically strange, but the vocal register is partially correct.</td>
+    <td style="background-color:#ffc7ce;">The model did not choose a highly chromatic mode.</td>
+    <td style="background-color:#c6efce;">It sounds as a studio recording, more or less in the same way the majority of other pieces sound like in terms of production.</td>
+    <td style="background-color:#ffeb9c;">The text is penitential, but the way it is recited does not feel penitential.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio025.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio025.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Spaghetti Western, largo, euphonium, ABA structure, slapback echo, tense.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffeb9c;">It starts as a plausible Spaghetti Western track, with the signature twangy guitar riff, but it quickly degenerates into a garage rock piece.</td>
+    <td style="background-color:#ffc7ce;">Definitely too fast for a largo.</td>
+    <td style="background-color:#ffc7ce;">The euphonium is missing.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffeb9c;">After an introduction, there is a theme that could be called “A” and that is reprised at the end of the piece, suggesting an ABA structure. However, “B” is not a theme or a precise form, but just a long guitar solo.</td>
+    <td style="background-color:#ffc7ce;">There is no slapback echo.</td>
+    <td style="background-color:#ffc7ce;">It does not convey the typical tension of Spaghetti Western: the harmonic tension of the introduction is quickly resolved with a cadence, followed by a stable dancing piece which has no tension and turns into blues tropes.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio026.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio026.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Madrigal, 70 bpm, lute, five voices choir, canonic passages, no reverb, graceful.</td>
+    <td style="background-color:#ffffff;">A graceful late renaissance madrigal in Italian about a mythological episode of pastoral beauty.</td>
+    <td style="background-color:#ffc7ce;">Sounds more like a contemporary folk piece than a madrigal. The choral singing is not based on counterpoint and the singers are fundamentally singing the same melody in unison or with rudimentary harmonizations. This has nothing to do with any type of Madrigal, neither the early 14th century style, the Renaissance rich polyphony, nor the Monteverdian monody.</td>
+    <td style="background-color:#c6efce;">The request “70 bpm” should be roughly in line with the early baroque tactus. The piece is precisely 70 bpm.</td>
+    <td style="background-color:#ffeb9c;">Aside from the voices, there is only a very sporadic instrument that sounds more like an harp than a lute.</td>
+    <td style="background-color:#ffc7ce;">Not only the text is metrically random, but also misses the request: it is not a description of a mythological episode, it is just a list of unrelated mythological characters. The writing style does not match Madrigal, either.</td>
+    <td style="background-color:#ffeb9c;">It is a choir, but it is not five-part. A five voices choir typically ranges from bass to soprano, while this is all around soprano and mezzosoprano, if not for an extremely brief passage in which a bass is playing a low not, immediately disappearing.</td>
+    <td style="background-color:#ffc7ce;">There are no relevant canonical passages.</td>
+    <td style="background-color:#ffc7ce;">There is a lot of unwanted reverb.</td>
+    <td style="background-color:#c6efce;">I find it stereotypical and simplistic compared to the request, but it is graceful nevertheless.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio027.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio027.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Ars Nova, 65 bpm, a cappella, male choir chanting, tempus perfectum 9/8, amateur recording, secular and cheerful.</td>
+    <td style="background-color:#ffffff;">A cheerful secular virelai in Old French about courtly love and grace. Ars Nova.</td>
+    <td style="background-color:#ffc7ce;">The vocal harmonization is very far from Ars Nova, as well as the structure of the piece. Once again, this is a piece based on an harmonic progression, which is not how Ars Nova works.</td>
+    <td style="background-color:#ffc7ce;">Bpm indication is clearly not part of Ars Nova notation, but it has an intrinsic notion of tempo that can be translated to bpm. The piece is around 100 bpm instead of 65.</td>
+    <td style="background-color:#ffc7ce;">Ars Nova is purely vocal. This piece also has a small percussion.</td>
+    <td style="background-color:#ffeb9c;">The generated text is way too… “inspired” by a virelai by Guillaume de Machat: “Douce Dame Jolie”, here transformed into “Douce Grace Cuer Joli”. Some verses are extremely close: in Machaut’s virelai, we read “Tous les jours de ma vie”, in Suno we get “Tout le jour en leal ami”; in Machaut’s, “Servie”, in Suno’s, “Servir franc”. The rhymes are based on the same ending syllables. Note that a virelai typically has a refrain and three stanzas; the model explicitly generated a refrain and properly placed it before and after the first stanza, but then it does not generate the third stanza, truncating the form.</td>
+    <td style="background-color:#ffc7ce;">While we do not know much about how Ars Nova was sung and there are extreme interpretations of it (such, for instance, Ensemble Organum’s rendition of Guillaume de Machaut through Corse Chant), this is far from sounding plausible. The bass range is particularly unrealistic. There is something in the vocal quality of this piece that feels more Mongolian or Turkic folk than Old French.</td>
+    <td style="background-color:#ffc7ce;">This is 4/4, not 9/8.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as an amateur recording.</td>
+    <td style="background-color:#ffc7ce;">The harmony is not cheerful, nor the vocal delivery of the text.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio028.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio028.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Holy Minimalism, largo, organ, counterpoint, polished production, ethereal.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">This sounds like a festive street organ piece from Northern Europe playing happy melodies parroting late Baroque melodic phrasings. It has nothing to do with Holy Minimalism.</td>
+    <td style="background-color:#ffc7ce;">It is not largo, it is way too fast.</td>
+    <td style="background-color:#c6efce;">It is indeed an organ piece.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Holy Minimalism comprises both vocal and instrumental music. In this case, I did not request vocals.</td>
+    <td style="background-color:#ffc7ce;">While it superficially mimics Baroque compositional devices, the piece is not inherently based on counterpoint, but rather on Alberti bass and other gallant melodic solutions.</td>
+    <td style="background-color:#ffc7ce;">It is not a polished production. The organ sound has a strange hazy reverb that sounds inconsistent across the piece.</td>
+    <td style="background-color:#ffc7ce;">It does not feel ethereal, it is festive and quirky.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio029.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio029.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">New Complexity, frequent tempo changes, bass clarinet, nested tuplets, radio transmission, apocalyptic.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">This is a progressive metal song with djent tropes. It sounds hilarious, as the solo instrument is the bass clarinet. The model probably understood “complexity” and “nested tuplets” as being unequivocally related to metal rather than Contemporary Classical.</td>
+    <td style="background-color:#ffc7ce;">Despite being a rhythmically complex piece, the tempo never changes.</td>
+    <td style="background-color:#c6efce;">The bass clarinet is present, even if it is playing extremely fast riffs that would be idiomatic for a guitar.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">The repertoire of New Complexity also comprises vocal pieces, but I did not request vocals here.</td>
+    <td style="background-color:#c6efce;">It is full of nested tuplets, in the style of Djent Metal more than the fractured language of New Complexity.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a radio transmission.</td>
+    <td style="background-color:#ffc7ce;">It is dramatic, but not apocalyptic. It is way too playful to be defined apocalyptic.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio030.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio030.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Integral Serialism, bassoon, dodecaphonic, crackling vinyl transfer, enigmatic.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">This is one of the most interesting erroneous interpretations given by the model in this study: the piece starts with cracking vinyl and a basson, as required; however, it quickly deviates far from serialism and becomes an early jazz phrase, as if it was an old swing recording. Suddenly, the jazz phrase loops and transforms into an hip hop beat: the material becomes a sample. Afterwards, the piece continues developing as instrumental hip hop, elaborating the original bassoon material with a clear nu-jazz inflection. While this has nothing in common with the original request, it is very fascinating to listen to how the model is always trying to figure out a plausible continuation for the musical signal during generation. Being trained on much more hip hop and jazz material than dodecaphony, it quickly translates the strange signal into a form that is more represented in the dataset.</td>
+    <td style="background-color:#ffc7ce;">No tempo indication: the term Integral Serialism already implies a series of variable durations that should change at each note event. The generated sound is an hip hop beat, so it is definitely off.</td>
+    <td style="background-color:#c6efce;">The bassoon is present.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">The repertoire of Integral Serialism also comprises vocal pieces, but I did not request vocals here.</td>
+    <td style="background-color:#ffc7ce;">It is not dodecaphonic.</td>
+    <td style="background-color:#ffeb9c;">It contains crackling vinyl sounds, but those are treated as a musical material for the hip hop beat. The crackling vinyl is thus not an artifact given by the track being a vinyl transfer, but rather a compositional element. While wrong, this détournement is very fascinating.</td>
+    <td style="background-color:#ffc7ce;">It does not sound enigmatic, especially when it resorts to blues and bebop melodic solutions.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio031.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio031.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Opera buffa, allegretto, French horn, bass male recitative, 3/4 meter, on-stage recording, narrative.</td>
+    <td style="background-color:#ffffff;">Recitativo section of an Opera Buffa in Italian. A bass male singer is narrating a domestic betreyal.</td>
+    <td style="background-color:#ffc7ce;">The singing style and the harmonic progression is far from Opera Buffa, as if it was contaminated by contemporary pop. At 0:40, for instance, there is a vocal passage that suddenly morphs the vocal timbre and technique into something extremely similar to an Italian pop-rock band called Negramaro.</td>
+    <td style="background-color:#ffc7ce;">The bpm is variable but it is always a bit too slow for an allegretto.</td>
+    <td style="background-color:#ffc7ce;">There is no French horn.</td>
+    <td style="background-color:#ffc7ce;">The text does not respect any formal structuring that would be required in an Opera Buffa. It seems pure prose.</td>
+    <td style="background-color:#ffc7ce;">It is a tenor, not a bass male. The singing is not recitative either.</td>
+    <td style="background-color:#ffc7ce;">It is 4/4, not 3/4.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as an on-stage recording.</td>
+    <td style="background-color:#c6efce;">It is narrative.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio032.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio032.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Singspiel, vivace, oboe, conversational male and female duet, frequent harmonic modulations, rehearsal take, romantic.</td>
+    <td style="background-color:#ffffff;">Singspiel libretto in German. A romantic conversation between a male and a female singers in which they discuss love constrained by social classes.</td>
+    <td style="background-color:#ffc7ce;">This is a romantic pop duet, not a Singspiel. The singing style, the harmony, the instrumentation, the melodic lines, all points to pop and nothing to XVIII German opera.</td>
+    <td style="background-color:#ffc7ce;">It is not vivace.</td>
+    <td style="background-color:#c6efce;">Yes, there is an oboe, even though it plays just a few notes.</td>
+    <td style="background-color:#ffc7ce;">This is more similar to a pop love song than to a Singspiel. There are some indications that might suggest it is a libretto (as, for instance, “(Sie, zögernd)”), but at the same time there are also song form tags such as “[Chorus]”.</td>
+    <td style="background-color:#ffc7ce;">This is not conversational. Singspiel is almost spoken word, while this piece is entirely sung. Note that the male singer is singing the female part and the female the male part.</td>
+    <td style="background-color:#ffc7ce;">There are no harmonic modulations, the entire chord progression is in a single key.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a rehearsal take.</td>
+    <td style="background-color:#c6efce;">It is undoubtedly romantic. A stereotyped pop notion of romanticism, yet romantic.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio033.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio033.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Oratorio, adagio, viola, high pitched contratenor singing, passacaglia, single-mic recording, grandiose.</td>
+    <td style="background-color:#ffffff;">A grandiose oratorio in Latin. Prayer to Saint Mary.</td>
+    <td style="background-color:#ffc7ce;">This is a very strange piece, as it tries to be a liturgical piece but also a song at the same time. The melodic contours are a blend of late romantic tropes and contemporary pop. This does not resemble an Oratorio. The harmony is pop.</td>
+    <td style="background-color:#ffc7ce;">It is andante, not adagio.</td>
+    <td style="background-color:#c6efce;">Yes, there is a viola.</td>
+    <td style="background-color:#ffeb9c;">It seems a plausible prayer to Mary, but it has the song form tags such as “[Chorus]”.</td>
+    <td style="background-color:#ffc7ce;">The voice is glitched and fragmented: given the contratenor indication, the model seems unsure wheter it should be a male or a female.</td>
+    <td style="background-color:#ffc7ce;">It is not a passacaglia form. Passacaglia implies a bass melodic lines being repeated as a structural material. Here the bass is just playing the fundamental of the varying chords of the harmonic progression.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a single-mic recording.</td>
+    <td style="background-color:#ffc7ce;">It does not sound grandiose.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio034.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio034.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Gothic Country, 91 bpm, mandolin, gritty mezzosoprano singing, jamming, room mic capture, subdued.</td>
+    <td style="background-color:#ffffff;">A subdued gothic country song about cosmic horror.</td>
+    <td style="background-color:#ffc7ce;">This is Country Pop, not Gothic Country. There is nothing pointing to Gothic Country specifically in the music.</td>
+    <td style="background-color:#c6efce;">The bpm is correct.</td>
+    <td style="background-color:#ffeb9c;">Yes, there is a mandolin, even if it sounds strange.</td>
+    <td style="background-color:#ffeb9c;">The chorus perfectly matches the request of dealing with cosmic horror. The verse has some strange reference to space that feel unnecessary, such as “Cigarette a small red planet / Shaking in my tired hand”, as if the model was trying too hard to match the cosmic theme. The piece also contains some stereotypical elements of country that might sound weird, especially if sung in first person; the verses “If salvation wears a Stetson / He ain’t riding in for me” is hilariously strange. The sudden reference to locusts also feels stereotypical.</td>
+    <td style="background-color:#ffc7ce;">The request was a gritty mezzosoprano, while here we get a male singer with a very wide vocal range. It has the same outlaw-country + pop vibe of the blues songs in #004 and #005.</td>
+    <td style="background-color:#ffc7ce;">Nothing suggests this might come out of a jam.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a room mic capture.</td>
+    <td style="background-color:#ffc7ce;">The singing has an assertive tone typical of Country Pop that compromises any attempt of rendering this piece subdued.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio035.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio035.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Progressive Bluegrass, 175 bpm, banjo, triplet time phrasings, live recording, uplifting and weird.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#c6efce;">It sounds as Progressive Bluegrass.</td>
+    <td style="background-color:#c6efce;">The bpm is correct.</td>
+    <td style="background-color:#c6efce;">There is a banjo.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#c6efce;">There are some triplet time phrasings in a 2/4 time.</td>
+    <td style="background-color:#ffeb9c;">The spatial sensation of the piece does not seem to suggest that it is a live recording. There are no background noises that might contextualize the piece in a performance. Nevertheless, the piece conveys a sense of liveness.</td>
+    <td style="background-color:#c6efce;">It is uplifting and the harmonic progressing is indeed weird for the genre.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio036.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio036.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Romanian Popcorn, 125 bpm, accordion, dynamic baritone singing, romanian minor scale, tv show transmission, euphoric.</td>
+    <td style="background-color:#ffffff;">An euphoric Romanian Popcorn song in Romanian about becoming famous and having fun.</td>
+    <td style="background-color:#ffeb9c;">The production style of the generated track misses some typical features of Romanian Popcorn (such as staccato plucked synths and euro-trance sounds from early 2000s), while it exhibits some features of more recents styles of international Electro-pop (such as offbeat acoustic guitar chords and reggaeton beats). The vocal style and melody is in line with Romanian Popcorn.</td>
+    <td style="background-color:#ffeb9c;">Slightly faster bpm.</td>
+    <td style="background-color:#c6efce;">Yes, there is an accordion.</td>
+    <td style="background-color:#c6efce;">The text seems plausible and has the right type of structural repetition.</td>
+    <td style="background-color:#ffc7ce;">The song contains a tenor voice, not a baritone.</td>
+    <td style="background-color:#ffc7ce;">No sign of the Romanian minor scale.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a TV show transmission.</td>
+    <td style="background-color:#ffeb9c;">It feels self-celebratory and playful, but not properly euphoric.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio037.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio037.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Balani Show, 168 bpm, balafon samples, polyrhythmic, radio session, frenetic.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffeb9c;">This feels way too polished and not instrumentally diverse as real Balani Show, but it matches its décalé rhythm, its speed and its sense of playfulness. The drum sounds in Balani Show are typically either electronic or based on acoustic percussions, while here they sound as a conventional drum kit.</td>
+    <td style="background-color:#c6efce;">1 bpm faster, but almost perfect tempo.</td>
+    <td style="background-color:#ffeb9c;">There is a balafon-like sound, but it does not sound as a sample – rather, as a synthesizer.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Balani Show can have MCs rapping, but here I asked for an instrumental piece.</td>
+    <td style="background-color:#ffc7ce;">There is a strong syncopation between the fast balafon melody and the kick drum, but it is not polyrhythmic.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a radio session.</td>
+    <td style="background-color:#c6efce;">Yes, it is frenetic.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio038.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio038.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Psybreaks, 140 bpm, squelchy synth bassline, minor ninth chords, hi-fi production, intricate and trippy.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffeb9c;">While this does not correspond to Psybreaks music, it is without any doubt a mixture of Breakbeat and Goa Trance, and in that sense it is a Psybreaks track. In this case, the Trance component is definitely predominant to the Psy/Goa sound and the mix feels too empty and clean. Maybe this is closer to some recent Progressive Breakbeat with Trance influence rather than classic Psybreaks from the early 2000s.</td>
+    <td style="background-color:#c6efce;">Slightly slower, but accurate enough.</td>
+    <td style="background-color:#c6efce;">The squelchy synth bassline is present, even if it has a relatively low filter resonance to be denoted as “squelchy”.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">There are no minor ninth chords.</td>
+    <td style="background-color:#c6efce;">The production is quite “hi-fi”, even if the mix is far from being perfectly balanced.</td>
+    <td style="background-color:#ffc7ce;">It is not particularly intricate; on the contrary, it is quite linear to be a Psybreaks piece, despite the frequent breakdowns and arrangement variations. It is not even particularly trippy for the Psy standards.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio039.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio039.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Bubbling, 125 bpm, vocal samples, Roland TR-909, detuned, heavy compression, exciting.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">This is not Bubbling, this is an Electro House beat. While this might resemble some type of Dutch House, the absence of any Antillean Dancehall influence distances it from Bubbling. The piece even has a drop that reminds different EDM genres, more closely related to Electro.</td>
+    <td style="background-color:#c6efce;">Correct bpm value.</td>
+    <td style="background-color:#c6efce;">There are heavily processed vocal samples.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Bubbling can have MCs rapping or even occasional singing, but in this case I asked for an instrumental track.</td>
+    <td style="background-color:#ffc7ce;">There are no Roland TR-909 drum sounds, I hear generic EDM samples from late 2000s/early 2010s.</td>
+    <td style="background-color:#ffeb9c;">The dynamic range is narrow and the kick drum is obviously compressed, but it is not “heavily compressed” for the standards of EDM music.</td>
+    <td style="background-color:#c6efce;">Yes, it is exciting.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio040.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio040.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Digital Cumbia, 115 bpm, guiro, harmonic minor scale, no reverb, psychedelic.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#c6efce;">It is Digital Cumbia without any doubt.</td>
+    <td style="background-color:#c6efce;">Precisely 115 bpm.</td>
+    <td style="background-color:#ffc7ce;">I hear no guiro sounds.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">It plays with minor chords, but using a natural minor scale, not an harmonic minor.</td>
+    <td style="background-color:#ffc7ce;">I hear a reverb, as in every other piece of this study.</td>
+    <td style="background-color:#ffeb9c;">I do not find it particularly psychedelic, but it definitely leans towards a psychedelic mood.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio041.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio041.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Neurofunk, 130 bpm, warped bassline, wobbling triplets, light compression, gloomy.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">It sounds more like a blend of Wonky beats and Electro-infused Funkstep. It lacks any connection with Drum and Bass, while Neurofunk is a subgenre of Drum and Bass.</td>
+    <td style="background-color:#c6efce;">Actually 131 bpm, but very close.</td>
+    <td style="background-color:#c6efce;">Yes, there is a warped bassline.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#c6efce;">There are a lot of triplets in the wobbling sounds.</td>
+    <td style="background-color:#ffc7ce;">The dynamic range is too small to call it a “light compression”.</td>
+    <td style="background-color:#ffc7ce;">It sounds way too optimistic to be called “gloomy”.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio042.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio042.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">EBM, 138 bpm, Roland SH-101, atonal, saturated analog mix, dystopian.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffeb9c;">It clearly exhibits some features of EBM music, in the atmosphere and the construction of the piece; however, it sounds more Industrial Techno or Electro Industrial than EBM.</td>
+    <td style="background-color:#c6efce;">Correct bpm.</td>
+    <td style="background-color:#ffeb9c;">The arpeggiated synth is similar to what could be obtained with an SH-101, but it sounds definitely more distorted. The timbral variance of the sound across the piece exhibits a behavior that does not seem idiomatic to the parametric space of the SH-101, but rather of a digital VST synth.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">It is not atonal; the breakdowns imply an underlying tonal progression.</td>
+    <td style="background-color:#ffeb9c;">Some parts of the piece sound like a raw analog mix, while others sound distinctly digital.</td>
+    <td style="background-color:#ffeb9c;">It feels more hypnotic and dark than properly dystopian as real EBM. Yet, it is not completely off.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio043.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio043.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Footwork, 150 bpm, vocal samples, Roland TR-808, complex kick pattern, overproduced, anxious.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#c6efce;">The first section sounds pretty much as a Footwork track, but the following sections exhibit some tropes that are outside of the classic Chicago Footwork style, rather leaning towards UK Bass. However, many UK artists in the middle of the 2010s were mixing these two styles, and some of their tracks were called “Footwork” even if they didn’t retain the Ghetto House influence of the original US style. The variations in the kick drum patterns, the 808 sounds, and the jazzy harmonic sequence adhere unequivocally Footwork.</td>
+    <td style="background-color:#c6efce;">Correct bpm.</td>
+    <td style="background-color:#c6efce;">There are several TR-808 drum sounds.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#c6efce;">Instrumental music, but I asked vocal samples, which are quite idiomatic to the genre.</td>
+    <td style="background-color:#c6efce;">Yes, there are complex kick patterns.</td>
+    <td style="background-color:#ffeb9c;">It does not feel overproduced, but there is a display of virtuosity in the arrangement and in the rhythmic variations that tends to an elaborate style of production.</td>
+    <td style="background-color:#ffc7ce;">It does not feel anxious.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio044.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio044.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Funk Automotivo, 95 bpm, bruxaria lead synth, high-pitched processed vocals, off-beat accents, glossy mix, gritty.</td>
+    <td style="background-color:#ffffff;">A Funk Automotivo beat in Brazilian about dystopian surveillance state.</td>
+    <td style="background-color:#ffc7ce;">This is very far from Funk Automotivo. The groove in this piece is a straight kick-snare pattern in 4/4; Funk Automotivo has no snare sounds and a 4-on-the-floor pattern complemented with Brazilian Funk patters in the synth sounds. There is no trace of any Brazilian Funk groove. The atmosphere of the piece is also very different from Funk Automotivo.</td>
+    <td style="background-color:#c6efce;">Precisely 95 bpm.</td>
+    <td style="background-color:#ffc7ce;">There is no bruxaria lead synth, only a generic electro house synth.</td>
+    <td style="background-color:#ffeb9c;">It looks as a rap text instead of a Funk Automotivo one. The lyrics should be much more minimal and repetitive.</td>
+    <td style="background-color:#c6efce;">The voice is high-pitched and processed as requested.</td>
+    <td style="background-color:#ffc7ce;">The accents are all on-beat.</td>
+    <td style="background-color:#ffeb9c;">It does not sound particularly glossy, but it is quite a clean mix.</td>
+    <td style="background-color:#ffc7ce;">It is not even remotely as gritty as a standard Funk Automotivo track would be.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio045.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio045.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Weightless Grime, 87 bpm, sub bass, syncopated, ping-pong delay, mechanical.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffeb9c;">It starts as Weightless Grime, but it quickly gravitates towards a distinctive UK Dubstep style. Arguably, the two types of music are strongly interrelated, but this sounds much more as one of those sparse, dubby, atmospheric Dubstep tracks from the late 2000s rather than a proper Weightless Grime piece. The Grime influence is present in some rhythmic patterns, though.</td>
+    <td style="background-color:#c6efce;">The bpm value is approximately right.</td>
+    <td style="background-color:#c6efce;">Yes, there is a sub bass.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#c6efce;">Yes, it is syncopated.</td>
+    <td style="background-color:#c6efce;">There is a ping pong delay, even if the stereophonic movement of the delayed repetition is sometimes wrong.</td>
+    <td style="background-color:#ffeb9c;">The rhythmic variance of the piece does not make it feel particularly mechanical, as it has a strong dub groove.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio046.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio046.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Lolicore, 190 bpm, Japanese vocal samples, amen breaks, seventh chords harmony, dry mix, chaotic.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#c6efce;">This piece contains all the fundamental elements of a Lolicore piece: fast, disjointed breaks, cut-up cute vocal samples, fast Breakcore rhythmic variations, and some underlying harmony.</td>
+    <td style="background-color:#c6efce;">The bpm is correct.</td>
+    <td style="background-color:#c6efce;">Yes, there are amen breaks.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffeb9c;">Instrumental music, but I asked Japanese vocal samples, which are quite idiomatic in the genre. There are vocal samples, but they do not sound necessarily Japanese, though, as they are spliced in very small fragments.</td>
+    <td style="background-color:#c6efce;">Yes, there are seventh chords in the harmony.</td>
+    <td style="background-color:#ffeb9c;">The mix is not dry, but neither particularly wet.</td>
+    <td style="background-color:#ffeb9c;">I do not perceive it as chaotic, but I guess it is very subjective. For Breakcore music, this piece is quite straightforward, but Breakcore is inherently chaotic.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio047.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio047.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Speedcore, 315 bpm, tom, extratone, raw production, cathartic.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">It is too slow for a Speedcore piece. This rather sound as Uptempo Hardcore.</td>
+    <td style="background-color:#ffc7ce;">This is around 210 bpm, extremely slower than the required 315 bpm.</td>
+    <td style="background-color:#ffc7ce;">There are no tom sounds.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">An extratone emerges when a sound is repeated and sped up so fast that the rhythm becomes a continuous tone with a precise frequency. This never happens in this track.</td>
+    <td style="background-color:#c6efce;">It is raw.</td>
+    <td style="background-color:#ffc7ce;">I do not find it cathartic at all.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio048.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio048.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Future Funk, 110 bpm, city pop keyboards, slapped bassline, bright mix, nostalgic.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#c6efce;">It has many features that are typical of Future Funk: funky groove and harmony, funky house drumming, city pop vocals pitched-up and some rhythmic cut-up obtained by manipulating sampled sounds. However, some parts of the piece do not feel sample-based as the genre typically is. The Vaporwave influence is minimal, but this still falls in the range of Future Funk music.</td>
+    <td style="background-color:#c6efce;">110 bpm.</td>
+    <td style="background-color:#c6efce;">There are some keyboard sounds that could be linked to City Pop.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">The bass is synthesized, not electric; therefore, it cannot be slapped.</td>
+    <td style="background-color:#c6efce;">The mix is quite bright.</td>
+    <td style="background-color:#ffc7ce;">It does not feel nostalgic, it is rather cheerful.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio049.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio049.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Gqom, 127 bpm, log drum, slow quintuplets, sidechained reverb, dark.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#c6efce;">The overall mood, the reliance on heavy, dark bass and minimal but complex drumming fits the aesthetics of Gqom. The melodic breakdown around two thirds of the piece feel a bit off, but for the rest the piece is totally idiomatic to Gqom.</td>
+    <td style="background-color:#c6efce;">One or two bpm lower, but still quite accurate.</td>
+    <td style="background-color:#ffeb9c;">Some percussive sounds in the piece might be classified as “log drum” samples, even though they do not carry the distinctive acoustic log drum timbre.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">There are the typical intricate patterns of Gqom, but I did not distinguish any quintuplet in it.</td>
+    <td style="background-color:#ffc7ce;">There is a huge reverb, but it does not sound sidechained, if not very very subtly.</td>
+    <td style="background-color:#c6efce;">Yes, it is dark.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio050.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio050.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Hi-Tech Psytrance, 193 bpm, glitch sounds, granular textures, complex digital delays, alien.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffeb9c;">The main drum pattern and the glitched lead are more Hardcore EDM rather than Psytrance, while the bassline resembles some styles of Full-On Psytrance. In general, it lacks the rich rhythmic-melodic textures of Psytrance, while the Hi-Tech component is definitely present. The structure of the piece has way too many breakdowns and brief structural variation for a Psytrance piece.</td>
+    <td style="background-color:#c6efce;">It is slightly faster, but in a 2-3 bpm range out of 195, which is mroe than acceptable.</td>
+    <td style="background-color:#c6efce;">Yes, there are glitch sounds. Even too many.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">I did not hear granular textures. There are almost no textural sounds at all in the piece.</td>
+    <td style="background-color:#ffc7ce;">There are very few moments in the piece where digital delays can be heard, and they do not sound complex.</td>
+    <td style="background-color:#ffc7ce;">The glitchy sounds feel more stereotypically electronic than alien. The “alien” atmosphere in this type of music is typically conveyed with more complex sound design.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio051.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio051.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Exotica, 100 bpm, vibraphone, 6/8 meter, reel-to-reel tape, optimistic.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#c6efce;">It fits Exotica music with a classic samba drum pattern, vibraphone melodies and Hawaiian-style guitar. The piece sounds very odd in some parts, but the style is correct.</td>
+    <td style="background-color:#c6efce;">Correct bpm.</td>
+    <td style="background-color:#c6efce;">Yes, there is a vibraphone.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">It is not in 6/8.</td>
+    <td style="background-color:#ffeb9c;">I suppose the model tried to make it sound as a reel-to-reel (especially in the intro), but the result is quite glitched and blurry.</td>
+    <td style="background-color:#c6efce;">It sounds optimistic.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio052.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio052.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Black MIDI, highly variable fast tempo, quarter tone MIDI piano, counterpoint, dry mix, abstract.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">This is a fast, weird bebop track with electronic piano in a jazz trio: it has nothing to do with Black MIDI.</td>
+    <td style="background-color:#ffc7ce;">The tempo is fast, but fixed.</td>
+    <td style="background-color:#ffc7ce;">It is not a quarter tone MIDI piano, it is an electronic piano in 12EDO.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">There are no counterpointal figures.</td>
+    <td style="background-color:#ffeb9c;">It is not particularly dry, nor particularly wet.</td>
+    <td style="background-color:#ffc7ce;">It does not sound abstract.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio053.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio053.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Musique Concrète, gurgling water samples, textural middle section, polished mix, surreal.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">It starts with a strange gestural introduction that, even if odd, might still fit in a Musique Concrète piece, but then immediately develops in a completely unrelated electronic track that is based upon melodic and rhythmic development, cutting any relationship with Musique Concrète. This piece is very hard to categorize as it contains elements of new age music, contemporary electronic music (the kalimba-like melodies remind me of Iglooghost), and other types of gestural elements that do not fall into any specific style, but that nevertheless are extremely far from Musique Concrète.</td>
+    <td style="background-color:#ffc7ce;">No tempo specified, as Musique concrète has no inherent pulse. This piece is very rhythmic though, which is inappropriate for the required context.</td>
+    <td style="background-color:#ffc7ce;">I did not detect any gurgling water sample.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">The middle section is constructed on rhythm and harmony, not on textures.</td>
+    <td style="background-color:#c6efce;">The mix sounds polished in the sense that the different sources sound quite separated.</td>
+    <td style="background-color:#ffeb9c;">It is surreal in some sections, but not at all in others. Maybe what is truly surreal is the juxtaposition between the intro and the rest of the piece.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio054.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio054.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Drill and Bass, 177 bpm, acid TB-303 lead sounds, long harmonic progression, hi-fi production, paranoid.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">It sounds as some sort of melodic Drum and Bass, not Drill and Bass; despite the name similarity, they are very distinct genres. There is no trace of IDM-style production such as complex drumming (not just fast breakbeats), contorted basslines, and progressive form, which a Drill and Bass track requires.</td>
+    <td style="background-color:#c6efce;">Correct bpm.</td>
+    <td style="background-color:#ffc7ce;">There is a lead arpeggio sound, but its timbre is different from those obtainable with a TB-303.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">The harmonic progression is short.</td>
+    <td style="background-color:#ffeb9c;">It does not sound hi-fi, but not even lo-fi. Mid-fi? Admittedly, these terms are vague.</td>
+    <td style="background-color:#ffc7ce;">It does not sound paranoid; quite the opposite, it almost feels emboldening.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio055.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio055.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Power Electronics, 95 bpm, feedbacked microphone, gradual accelerando, tube saturation, disturbing.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">This is an Industrial Hip Hop beat, not a Power Electronics piece. Power Electronics can have a deep bass pulse and drums, but it is not in the form of an hip hop breakbeat. This track sounds as something on which a rapper could do something in the style of Death Grips or Clipping.</td>
+    <td style="background-color:#c6efce;">Accurate bpm.</td>
+    <td style="background-color:#ffc7ce;">The track is full of distorted sounds, but they sound as analog synthetics sounds or some sort of electric sounds, not as what you would get from a feedbacked microphone.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">There is no gradual accelerando.</td>
+    <td style="background-color:#c6efce;">It is definitely saturated and some sound could be obtained through tube saturation.</td>
+    <td style="background-color:#ffeb9c;">I don’t find it disturbing, despite its noisiness.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio056.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio056.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Harsh Noise Wall, digital noise generators, variable dynamics, live performance, ritualistic.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">Harsh Noise Wall is made of noise textures. This track contains wide range noises, but they are very rhythmical. It is not a wall of noise. Also, it is mostly filtered with a lowpass, so it does not sound in the whole spectrum. I think the rhythmical nature comes from the term “ritualistic” in the prompt, whose meaning should not be reduced to repetitive percussion…</td>
+    <td style="background-color:#ffc7ce;">No tempo specified in the prompt, because Harsh Noise Wall has no tempo. The generated track has a fixed pulse, which is not idiomatic to Harsh Noise Wall.</td>
+    <td style="background-color:#ffeb9c;">There are noises that could be obtained by generators, but they have an analog feeling more than digital; at the same time, it is theoretically possible to implement a digital algorithm to replicate these sounds (in some unexpected sense, Suno is that algorithm…).</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#c6efce;">Yes, there are variable dynamics, despite the noisy nature of the piece.</td>
+    <td style="background-color:#c6efce;">The progression of the piece has a distinct liveness, it could easily be interpreted as a section of a noise concert.</td>
+    <td style="background-color:#c6efce;">Yes, it feels ritualistic.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio057.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio057.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Lowercase, quiet extended techniques on cello, always pianissimo, ambient room recording, mysterious.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">Even if it starts very sparse, this track has not much in common with Lowercase music. It slowly transforms into a slow cinematic piece in minor key, and the silent gap between the sound events disappears; in Lowercase, instead, that gap counts, as well as working on pianissimo all the time. The dynamics of this piece imply a dramatic form that is not part of Lowercase’s aesthetics.</td>
+    <td style="background-color:#ffc7ce;">No tempo specified, lowercase music is typically very sparse and irregular in time. As the piece progresses, it becomes faster and very regular in time – a feature that does not fit the context.</td>
+    <td style="background-color:#ffeb9c;">Yes, there is a cello and it is playing in a non-standard way (even if it does not fully correspond to a specific extended technique…)</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">It is not always pianissimo, the dynamics rise throughout the piece.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as an ambient room recording, but rather as a production made by overdubbing different materials in the timeline of a DAW.</td>
+    <td style="background-color:#ffeb9c;">It conveys a sense of dramatic suspension more than a sense of mystery, but I guess it is a close semantic field.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio058.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio058.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Progressive Folk, 100 bpm, fiddle, soothing young soprano singing, complex structure with multiple different verses, retro aesthetic mix, bittersweet.</td>
+    <td style="background-color:#ffffff;">A bittersweet Progressive Folk song about a lighthouse keeper’s solitude.</td>
+    <td style="background-color:#ffc7ce;">It sounds as pop songwriting with an Americana influence, not as a Progressive Folk piece. Progressive Folk has complex structure and arrangements, creative harmonic progressions, diverse rhythmic inventions, and so on, which this piece lacks completely.</td>
+    <td style="background-color:#c6efce;">Slightly slower, but accurate enough.</td>
+    <td style="background-color:#c6efce;">Yes, there is a fiddle.</td>
+    <td style="background-color:#ffeb9c;">The required theme is present and the text contains many pertinent metaphors; yet, the way it is written is not very musical, as it has no implied metrical organization, which tends to produce an unnatural pacing in the singing.</td>
+    <td style="background-color:#ffeb9c;">Even if it is indulging in pop tropes, this is in fact a soothing young soprano voice, as required. The quality of the vocal delivery varies, as some parts sound clearly artificial, yet it mostly satisfy the request contained in the prompt. Not all verses are sung with a realistic metrical rhythm, though, as it often happens in Suno – it is partly related to the intrinsic metric inadequacy of the generated lyrics.</td>
+    <td style="background-color:#ffc7ce;">There is no complex structure with multiple verses, the form of this piece is the bare minimum for a simple song form.</td>
+    <td style="background-color:#ffc7ce;">The mixing style is much closer to contemporary Americana than a retro aesthetic.</td>
+    <td style="background-color:#ffc7ce;">More sweet than bittersweet. I can’t feel the bitter part in this.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio059.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio059.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Gnawa, 115 bpm, sintir, mellow bass vocals, polyrythmic, on-site recording, trance-inducing.</td>
+    <td style="background-color:#ffffff;">A trance-inducing ceremonial Gnawa poem in Moroccan Arabic conjuring a djinn.</td>
+    <td style="background-color:#ffc7ce;">Gnawa music is strongly related with possession rituals; it is therefore an acoustic, folkloric, traditional form of music that has not seen much contamination with modern production styles. This piece, instead, is just Arabic pop.</td>
+    <td style="background-color:#ffc7ce;">While Gnawa is not thought in terms of bpm, it has a steady rhythmic pulse. The generated piece is 5 bpm faster than what asked in the prompt.</td>
+    <td style="background-color:#ffc7ce;">No trace of sintir.</td>
+    <td style="background-color:#ffc7ce;">The evaluation of these lyrics is difficult, because the model decided to generate a text in transliterated Arabic, in a dialect that seems to be more Levantine than Moroccan. The core of what is repeated over the piece “Halik, Haleek, Hakik” seems meaningless. It does not look like a Gnawa poem, anyway.</td>
+    <td style="background-color:#ffc7ce;">The singer is not a bass.</td>
+    <td style="background-color:#ffc7ce;">It is not polyrhythmic.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a on-site recording, but rather as a pop studio production.</td>
+    <td style="background-color:#ffc7ce;">It is not trance-inducing, differently from real Gnawa music.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio060.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio060.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Mento, 123 bpm, rhumba box, monotone male singing, offbeat, ribbon microphone, humorous.</td>
+    <td style="background-color:#ffffff;">A mento song in Jamaican about urban poverty.</td>
+    <td style="background-color:#ffeb9c;">The piece sounds clearly AI-generated. It seems more a Calypso song than a Mento song, but there is a frequent confusion in the usage of these two terms.</td>
+    <td style="background-color:#ffc7ce;">This is 91 bpm, not 123.</td>
+    <td style="background-color:#ffeb9c;">There is a sound similar to a Rhumba Box; however, its melodic range is considerably wider than a real rhumba box, whose extension is typically small and restricted to the small range – this piece, instead, contains intricate phrasings in the upper range that recall kalimbas more than rhumba boxes.</td>
+    <td style="background-color:#c6efce;">The lyrics mimic a Jamaican Patois song about poverty with a reasonable verisimilitude.</td>
+    <td style="background-color:#ffeb9c;">The song starts with a meaningless low voice uttering, recalling reggae more than mento. The call and response style of singing fits Mento (and Calypso, even more). The voices sound artificial. The singing is also skipping some syllables of the text.</td>
+    <td style="background-color:#c6efce;">It is offbeat.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as if the voices are recorded with a ribbon microphone.</td>
+    <td style="background-color:#ffeb9c;">It does not feel humorous to me. There is obviously a contrast between the major tonality of the piece and the lyrics content, which could be understood as humorous.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio061.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio061.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Circassian Folk Music, 111 bpm, pshine accordion, group of male singers, 5/8 meter, basement recording, mournful.</td>
+    <td style="background-color:#ffffff;">A mournful Circassian folk music song in Circassian about the distruction of homeland during the Russian-Caucasian war.</td>
+    <td style="background-color:#ffc7ce;">Harmonically, this piece has nothing to do with Circassian music. It sounds as a generic, undefined folk song from Russia.</td>
+    <td style="background-color:#c6efce;">Correct bpm.</td>
+    <td style="background-color:#ffeb9c;">There is an accordion but it is not tuned as a pshine and it is playing in a very different style than what is typical of Circassian accordion players.</td>
+    <td style="background-color:#ffeb9c;">It is very hard to assess the generated lyrics, as Circassian languages are hard to translate. The text seems to be a morphologically credible form of Kabardian, and some words are translatable, but some others appear to be meaningless (ШэфIэшэуфы? ДзэрыхьэхьакIу?). The overall sense of the text is unclear. Further investigation with a mother-tongue Circassian would be necessary for a better assessment.</td>
+    <td style="background-color:#ffeb9c;">Considering that it is a mournful song, the cheering “hooray!” of the chorus feels inappropriate. I cannot say if the pronunciation is correct, as Kabardian has one of the most complex phonetics in human languages. The request of generating a “group of male singers” singing a folk song in a Caucasian style is fulfilled, though.</td>
+    <td style="background-color:#ffc7ce;">It is 4/4 (or 2/4, it depends how you count it), surely not 5/8.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a basement recording.</td>
+    <td style="background-color:#ffc7ce;">It does not feel mournful.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio062.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio062.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Canto degli Alpini, andante, a cappella, dramatic male choir, major to minor modulation, field recording, commemorative.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a Canto degli Alpini. The choral harmonizations (despite being remarkably articulated) are very different from that music; the soloist vocal is unusual and very off stylistically.</td>
+    <td style="background-color:#c6efce;">It is andante.</td>
+    <td style="background-color:#c6efce;">Canto degli Alpini is purely vocal. This is a cappella, as required.</td>
+    <td style="background-color:#ffeb9c;">The theme is matched, but stylistically it does not look like an Alpine chant. Metrically, it does not make sense.</td>
+    <td style="background-color:#ffc7ce;">The vocal pronunciation is very strange. The relationship between the harmony and the lyrics is quite dissonant (cheerful chords while singing about young men dying in war). The soloist vocalist does not match the rest of the choir.</td>
+    <td style="background-color:#c6efce;">Yes, there are several passages shifting from major to minor tonalities.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a field recording.</td>
+    <td style="background-color:#ffeb9c;">The text is commemorative, the music does not convey this feeling.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio063.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio063.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Albanian Lab Polyphony, fluid tempo, a cappella, intense male choir, contrasting dynamics, spatial audio mix, plaintive.</td>
+    <td style="background-color:#ffffff;">A plaintive Albanian Lab Polyphony composition in Albanian, sung a cappella for a funeral by an intense male choir.</td>
+    <td style="background-color:#ffc7ce;">Only very small passages display typical Albanian harmonization and vocal techniques; for the rest, this is a choral piece that bears no resemblance to Albanian Lab Polyphony. It sounds as a cinematic new age choral piece.</td>
+    <td style="background-color:#ffc7ce;">Albanian Lab Polyphony has a fluid notion of time. The pace of the generated piece is too regular and rigid for this type of music.</td>
+    <td style="background-color:#ffc7ce;">Albanian Lab Polyphony is purely vocal. The piece is not a cappella though, as it is punctuated by a percussion.</td>
+    <td style="background-color:#ffeb9c;">The text is plaintive, but it is written in a Norther dialect, while Labëria is in Southern Albania. Structurally, it arranged as a modern song, more than a traditional chant.</td>
+    <td style="background-color:#ffeb9c;">It is an intense male choir, but it is not singing as an Albanian choir. The only typically Albanian passage can be heard around 1:38.</td>
+    <td style="background-color:#ffc7ce;">There are no remarkable “contrastive dynamics”.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a spatial mix, the choir is all more or less in the centre of the stereo field.</td>
+    <td style="background-color:#ffeb9c;">It is plaintive, but not even remotely as much as a real Albanian Lab Polyphony piece.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio064.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio064.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Quan họ, variable tempo, a cappella, two female singers, singing in unison, close mic’d, affectionate.</td>
+    <td style="background-color:#ffffff;">An affectionate poem in Vietnamese for Quan Họ singing about love, rich of metaphors.</td>
+    <td style="background-color:#ffc7ce;">Completely different from Quan Họ. This sounds as a contemporary new age ballad with Westernized Vietnamese singing, built upon functional harmony.</td>
+    <td style="background-color:#ffc7ce;">Quan họ has no strict tempo marking, it rather flows. The tempo of this piece, instead, is regular.</td>
+    <td style="background-color:#ffc7ce;">Quan họ is purely vocal. The generated piece has electronic vocal-like sounds.</td>
+    <td style="background-color:#c6efce;">I do not possess great capabilities in the interpretation of Vietnamese lyrics, but the structure of the text seems appropriate for Quan Họ and it is full of metaphors, as asked.</td>
+    <td style="background-color:#ffc7ce;">This should be sung by two singers, but there is just one, accompanied by a synthetic choir. The singing style has nothing in common with Quan Họ.</td>
+    <td style="background-color:#ffc7ce;">They are not singing in unison.</td>
+    <td style="background-color:#ffc7ce;">It does not sound close mic’d.</td>
+    <td style="background-color:#c6efce;">Even if this has nothing to do with Quan Họ, this is affectionate nevertheless.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio065.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio065.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Rembetika, 130 bpm, bouzouki, forceful female singer, 9/8 meter, live room bleed, drunken.</td>
+    <td style="background-color:#ffffff;">A fatalistic rembetika song in Greek, sung by a drunken, forceful female singer.</td>
+    <td style="background-color:#ffc7ce;">This sounds as a pastiche of various genres of Greek popular music of the XXth century, including Laika and Dimotika, but it certainly does not sound as a Rebetiko song.</td>
+    <td style="background-color:#ffeb9c;">In Rembetika performances the tempo varies, but it typically has a regular pulse, so I requested a specific bpm value. The generated track is slightly too fast.</td>
+    <td style="background-color:#ffeb9c;">There is a bouzouki, indeed. Sometimes, the attack transient of the instrument sounds terrible.</td>
+    <td style="background-color:#ffc7ce;">The text is written as if someone was trying to parrot Rebetiko culture *from the outside*. Would a genuine fatalistic Rebetiko song have a chorus repeating “Drink your ouzo and die”? This type of unnatural descriptiveness occurs frequently in the texts contained in this corpus and immediately point to AI generation.</td>
+    <td style="background-color:#ffeb9c;">The pronunciation is very odd, but the singing style is forceful as requested.</td>
+    <td style="background-color:#ffc7ce;">It is not in 9/8.</td>
+    <td style="background-color:#ffc7ce;">There is no hearable live room bleed.</td>
+    <td style="background-color:#ffc7ce;">It does not sound drunken.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio066.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio066.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Sutartinės, fluctuating tempo, skudučiai pan pipes, female choir, polyphonic, digital recording, somber.</td>
+    <td style="background-color:#ffffff;">A somber Sutartinės piece in Lithuanian narrating a metaphorical tale.</td>
+    <td style="background-color:#ffc7ce;">This has nothing to do with Sutartinės, this is a new age song.</td>
+    <td style="background-color:#ffc7ce;">Sutartinės have a fluctuating tempo and overlapping polyrythmes. Here there is a fixed pulse.</td>
+    <td style="background-color:#ffc7ce;">There is a pan pipe-like sound, but is nowhere near skudučiai in tuning and articulation.</td>
+    <td style="background-color:#ffc7ce;">Sutartinės employ metrical verses, which are absent here. The text seems a contemporary attempt at mimicking archaic writing in a modern song form.</td>
+    <td style="background-color:#ffc7ce;">The request was “female choir”, but the piece contains a solo vocalist with an accompanying choir.</td>
+    <td style="background-color:#ffc7ce;">Even if there is a choir, it is not polyphonic in its construction. It is, as every other piece I have analyzed so far in this corpus, essentially based on functional chords.</td>
+    <td style="background-color:#c6efce;">Rather than a digital recording, this sounds as a digital production. Nevertheless, the way the voices sound seem to suggest some form of digital recording.</td>
+    <td style="background-color:#ffc7ce;">It does not feel much somber.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio067.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio067.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Paghjella, fluid tempo, a cappella, choir of male singers, picardy third ending, chamber reverb, devotional.</td>
+    <td style="background-color:#ffffff;">A devotional Paghjella piece in Corsican about a shepherd finding faith.</td>
+    <td style="background-color:#ffc7ce;">This is completely different from Paghjella. Harmonically, melodically, rhythmically, timbrically, it has nothing to do with it.</td>
+    <td style="background-color:#ffc7ce;">Paghjella has a fluid tempo. Here the tempo is fixed.</td>
+    <td style="background-color:#ffc7ce;">Paghjella is purely vocal. The artificial choir gives it a very synthetic quality, far from true a cappella pieces.</td>
+    <td style="background-color:#ffc7ce;">Nothing in the text suggests that the speaker is a shepherd. As the text explicitly says, this is a “serenata”, a serenade, more than a Paghjella.</td>
+    <td style="background-color:#ffc7ce;">Once again, when asked to generate a choir, the model opts for a solo voice with a very synthetic-sounding choral accompaniment. The vocal style is not Corsican.</td>
+    <td style="background-color:#ffc7ce;">It does not end with a picardy third, the final chord is minor.</td>
+    <td style="background-color:#ffeb9c;">There is a reverb, but it does not really sound as a chamber reverb.</td>
+    <td style="background-color:#ffc7ce;">It does not sound devotional, the chosen pop harmony does not suggest a sacral or pious setting.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio068.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio068.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Joik, a cappella, tender resonant singing, crescendo dynamics, outdoor windy recording, spontaneous.</td>
+    <td style="background-color:#ffffff;">A brief and repetitive poem in Sami for a Joik about nature contemplation.</td>
+    <td style="background-color:#ffc7ce;">Very far from Joik. Once again, a new agey piece based on functional harmony, adorned with unrealistic choral passages and electronic percussions.</td>
+    <td style="background-color:#ffc7ce;">No tempo indication, Joik music is inherently variable. Here the tempo is fixed.</td>
+    <td style="background-color:#ffc7ce;">Joik is typically a cappella. This piece has background percussions.</td>
+    <td style="background-color:#ffc7ce;">Asking to write a Joik text separated from the music is a strange request, as in the Sapmi tradition they form a unbreakable unit. Many Joiks have no lyrics at all, being purely phonetic, while others do. The text generated by the model seems formally plausible as it employs the typical repetition of verses, but the content does not feel genuine to me: Joik typically does not describe but rather enact natural entities, while here there are descriptive passages and also an explicit ego. Also, the text is formatted as if it was a pop song form, which is certainly wrong for Joik.</td>
+    <td style="background-color:#ffc7ce;">The singing is tender, but not really “resonant” in the Joik sense. Stylistically, it bears no resemblance to it.</td>
+    <td style="background-color:#ffc7ce;">There is an increase in the intensity of the piece, but it does not evolves in the form of a crescendo, it just follows a classic song form dynamic, which is out of context with the request.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as an outdoor windy recording.</td>
+    <td style="background-color:#ffc7ce;">It feels written, not spontaneous.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio069.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio069.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Inuit Vocal Games, accelerating tempo, a cappella, two female raspy singers, interlocking rhythmical pattern, close figure 8 microphone, joyful.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">This sounds as scat singing arranged in a pop form, with strong artificial artifacts, and even electronic drums. Not even close to Inuit Vocal Games.</td>
+    <td style="background-color:#ffc7ce;">Inuit Vocal Games typically start with a pattern that gets progressively sped up. Here the tempo is fixed.</td>
+    <td style="background-color:#ffc7ce;">Inuit Vocal Games are purely vocal, this piece is not.</td>
+    <td style="background-color:#ffffff;">No lyrics.</td>
+    <td style="background-color:#ffc7ce;">The singers are not raspy. Instead of two female singers, there is an ever-slightly-changing feminine voice and a very artificial bass male singer. In some parts the female singer doubles, but it seems more like an overdub than two distinguished singers.</td>
+    <td style="background-color:#c6efce;">There are interlocking rhythmical patterns, even if in a completely different manner to what I asked.</td>
+    <td style="background-color:#ffc7ce;">I do not perceive figure 8 microphones: this is a very much produced arrangement, therefore this indication does not even make sense. It would have been meaningful in the context of a real Inuit Vocal Game, where there are only two singers standing in front of each other.</td>
+    <td style="background-color:#ffeb9c;">It is more cheerful than joyful, but it is emotionally close nevertheless.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio070.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio070.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Philly Drill, 150 bpm, synthesized bells, smoky male voice rapping, syncopated metrics, overdubbed, ghastly.</td>
+    <td style="background-color:#ffffff;">A ghastly Philly Drill track about drug-fueled violence.</td>
+    <td style="background-color:#ffc7ce;">This is a generic Drill song, but nothing points to Philly Drill specifically. The style of rapping, in particular, is very different from the off-kilter style of Philly Drilly. The beat style is more similar to UK Drill than to the production style of the contemporary Philadelphia style.</td>
+    <td style="background-color:#c6efce;">I would count it as 75 bpm, which is half of 150, therefore it is correct.</td>
+    <td style="background-color:#ffc7ce;">No synthesized bells detected in the piece.</td>
+    <td style="background-color:#ffeb9c;">The lyrics kinda work for a drill song, even if some verses are strange. As in other cases in the corpus, the model is trying too hard to find contextual connections and it ends up sounding strange: the chorus starts with “Nightmares on Allegheny”, where “Allegheny” is the river flowing through Philadelphia – it sounds didactic more than genuine.</td>
+    <td style="background-color:#ffeb9c;">The rapper sounds kinda smoky in some sections, but it is very different from Philly Drill.</td>
+    <td style="background-color:#c6efce;">The metrics are syncopated.</td>
+    <td style="background-color:#ffc7ce;">There is no vocal overlapping that might suggest an overdubbing.</td>
+    <td style="background-color:#ffc7ce;">It does not feel ghastly.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio071.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio071.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">G-Funk, 94 bpm, minimoog lead synth, energetic rapping, triplets in rap flow, live recording, sexy.</td>
+    <td style="background-color:#ffffff;">A sexy and explicit G-Funk track with energetic rapping about vibing and enjoying hedonistic pleasure.</td>
+    <td style="background-color:#c6efce;">Unequivocally G-Funk music.</td>
+    <td style="background-color:#c6efce;">1 bpm slower: accurate enough.</td>
+    <td style="background-color:#ffeb9c;">There is a Moog synth, but it is playing the bassline, not a lead melody. The lead sounds do not sound timbrically related to the Minimoog.</td>
+    <td style="background-color:#c6efce;">The lyrics fit the genre and the thematic request. The metrics are not particularly well-thought, but the generated track manages to organize them in a plausible rap flow.</td>
+    <td style="background-color:#ffeb9c;">The vocal delivery is in line with the genre request, but it is not “energetic” as requested.</td>
+    <td style="background-color:#ffc7ce;">The flow does not employ triplets, the rhythm is based on binary figures rather than ternary.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a live recording.</td>
+    <td style="background-color:#c6efce;">The content and the style align with a stereotypical ideal of sexiness, compatible with G-Funk aesthetics.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio072.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio072.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Britcore, 130 bpm, turntables, aggressive duo of rappers, detuned sampled chords, cassette recording, ferocious.</td>
+    <td style="background-color:#ffffff;">A Britcore track with ferocious rapping about police brutality.</td>
+    <td style="background-color:#ffeb9c;">This is an old-school hip hop track that might fit Britcore, but it is so fleshless that it fails to convey a specific Britcore vibe: the track is too short and does not contain any other sound beside a breakbeat, a repetitive bassline, and the rapping. The vocal style also does not feel particularly Britcore.</td>
+    <td style="background-color:#ffc7ce;">99 bpm instead of 130.</td>
+    <td style="background-color:#c6efce;">There is a lot of turntablism.</td>
+    <td style="background-color:#ffc7ce;">The language employed in the generated lyrics more closely resembles contemporary UK drill than Britcore – see, for instance, the influence of Jamaican Patois in terms such as “mandem”, whose use was not common in the 1990s.</td>
+    <td style="background-color:#ffeb9c;">The voice feels AI-generated and the accent does not resemble Britcore rapping. The model respect the request of generating an aggressive duo of rappers, though.</td>
+    <td style="background-color:#ffc7ce;">There are no detuned sampled chords. There are no chords at all.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a cassette recording.</td>
+    <td style="background-color:#ffeb9c;">It does not feel particularly ferocious, but it conveys some sort of rage.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio073.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio073.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Dixieland, 138 bpm, cornet, multiple phrases overlapped, concert hall recording, joyous.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffeb9c;">This piece is very strange to evaluate, because it superficially resembles Dixieland – the instrumentation, the harmony, the type of phrasing – but at the same time it does not have the form of a Dixieland track, as there is no overlapping between different phrases (while Dixieland is essentially polyphonic) and it does not even have any thematic element, being just a sequence of short, lifeless solos across multiple instruments. The sound is quite distorted, in a way that does not resemble old phonographic recordings, but rather digital artifacts related to AI generation.</td>
+    <td style="background-color:#c6efce;">1 bpm faster, but almost perfect tempo.</td>
+    <td style="background-color:#c6efce;">Yes, there is a cornet.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">There are no multiple phrases overlapped.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a concert hall recording.</td>
+    <td style="background-color:#ffc7ce;">It feels so lifeless compared to a real Dixieland recording that it fails to convey joy. I find it slightly disturbing.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio074.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio074.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">European Free Jazz, soprano sax, from fortissimo to pianissimo, live recording, cryptic.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">This is a Cool Jazz piece, not European Free Jazz. It does not have any feature pointing to Free Jazz.</td>
+    <td style="background-color:#ffc7ce;">No tempo indication: European Free Jazz has no stable pulse. Here the tempo is fixed.</td>
+    <td style="background-color:#ffeb9c;">There is a sound that is supposed to be a soprano saxophone, but at times it sounds more like a clarinet and it is playing phrasings that do not feel very idiomatic to the soprano saxophone.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">It does not transition from fortissimo to pianissimo.</td>
+    <td style="background-color:#ffc7ce;">It does not sound like a live recording.</td>
+    <td style="background-color:#ffc7ce;">It does not sound cryptic.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio075.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio075.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Rocksteady, 82 bpm, electric bass, rounded male voice, offbeat major chords, tape delay, relaxed.</td>
+    <td style="background-color:#ffffff;">A relax rocksteady song in Jamaican inviting the listeners to dance.</td>
+    <td style="background-color:#ffc7ce;">The singing style, the type of syncopation, the instrumentation, the mixing, the melody: everything points to Roots Reggae rather than Rocksteady. It also lacks the typical Doo-Wop influence that is central in Rocksteady. It sounds as something coming from the late 1970s rather than the late 1950s.</td>
+    <td style="background-color:#c6efce;">Accurate bpm.</td>
+    <td style="background-color:#c6efce;">Yes, there is an electric bass.</td>
+    <td style="background-color:#ffc7ce;">The generated lyrics have the form and language of modern Dancehall music, rather than a Rocksteady track. The addition of verses like “Come rocksteady wid me” do not increase the realism of the text – quite the opposite.</td>
+    <td style="background-color:#ffeb9c;">It is a rounded male voice, at times even too similar to some well-known Jamaican singers… The singing style is Roots Reggae, though, not Rocksteady.</td>
+    <td style="background-color:#c6efce;">Yes, it employs offbeat major chords.</td>
+    <td style="background-color:#c6efce;">Yes, there is a tape delay.</td>
+    <td style="background-color:#c6efce;">Yes, it sounds relaxed.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio076.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio076.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Math Pop, 131 bpm, tapping electric guitar, young ethereal female singing, irregular ever-changing riffs, overproduced, quirky.</td>
+    <td style="background-color:#ffffff;">A quirky Math Pop song about pandemic isolation.</td>
+    <td style="background-color:#c6efce;">The style of the song is undoubtedly Math Pop: the vocal metrics, the guitar riffs, and the overall mood of the track match the request. The chorus of the piece is not much Math Rock, leaning instead towards standard Pop Rock, but this is compatible with some examples of existing Math Pop music.</td>
+    <td style="background-color:#c6efce;">Correct bpm value.</td>
+    <td style="background-color:#c6efce;">Yes, there is a tapping electric guitar.</td>
+    <td style="background-color:#ffc7ce;">The model did not generate Math Pop lyrics, but rather Pop lyrics about Math. It sounds absolutely ridiculous to listen to verses such as “Solve for X when the door’s still locked tight /
+If love’s a limit as t goes wide”.</td>
+    <td style="background-color:#ffeb9c;">The piece contains a young ethereal female singer, but the voice is obviously AI-generated in some parts and it is skipping some syllables of the lyrics.</td>
+    <td style="background-color:#ffeb9c;">There are multiple riffs that certainly fall in the domain of Math Rock and Math Pop, but they are not that irregular or ever-changing.</td>
+    <td style="background-color:#c6efce;">The mix is very crowded in some parts; I guess that could be called “overproduced”.</td>
+    <td style="background-color:#ffc7ce;">It does not feel quirky at all. It sounds very conformist to be a Math Pop track.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio077.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio077.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Emoviolence, 135 bpm, distorted guitar, screamed singing, crescendo until collapsing, remastered version, angry.</td>
+    <td style="background-color:#ffffff;">An angry Emoviolence song about existential nihilism.</td>
+    <td style="background-color:#ffc7ce;">The intro and the first verse might be called Emoviolence, but from the chorus onwards it transforms into a pop-infused Metalcore song. Melodic, auto-tuned clean vocals in the chorus are not part of the Emoviolence aesthetics. Rhythmically, many riffs and drum patterns are also much more related to Metalcore.</td>
+    <td style="background-color:#c6efce;">Slightly higher bpm, but accurate enough.</td>
+    <td style="background-color:#c6efce;">Yes, there are distorted guitars.</td>
+    <td style="background-color:#ffeb9c;">The text really feels in the style of Emoviolence, with its mixture of individualist, nihilistic punk perspectives and prose-like contemporary poetic devices. The central image of the chorus, though, sounds extremely strange: “Teeth on the telescope / Gnawing at the void” – it sounds as if the model was putting too much effort on finding a literal, physical expression existential disbelief.</td>
+    <td style="background-color:#ffeb9c;">There is screamed singing, but there is also melodic Metalcore singing, which is not part of the request.</td>
+    <td style="background-color:#ffc7ce;">There is no remarkable crescendo, as the piece already starts in forte.</td>
+    <td style="background-color:#ffc7ce;">The request of having a “remastered version” is admittedly strange and specific, but it referred on the fact that much Emoviolence music has been originally recorded with amateur equipment, option for very raw production processes; it would have made sense to hear a raw mix being remastered in order to obtain a better sounding version. The generated track does not convey this sensation: it sounds as a studio-standard Metalcore track.</td>
+    <td style="background-color:#c6efce;">It feels angry and resentful.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio078.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio078.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Grindcore, 195 bpm, double kick drum, gritty growl singing, rapid-changing structure, cavernous mix, infernal.</td>
+    <td style="background-color:#ffffff;">An infernal Grindcore track about nuclear war aftermath.</td>
+    <td style="background-color:#ffc7ce;">This piece is a mixture of Thrash and Brutal Death Metal, but clearly not Grindcore. A Grindcore track would have an evident Punk influence and a more chaotic structure; it would employ blastbeats in a different matter, in a much more disjointed way. The riffing in the track is distinctly Thrash-Death.</td>
+    <td style="background-color:#ffc7ce;">It is 55 bpm faster than it should be.</td>
+    <td style="background-color:#c6efce;">There is a double kick drum.</td>
+    <td style="background-color:#c6efce;">The lyrics perfectly match the style and the theme requested in the prompt.</td>
+    <td style="background-color:#c6efce;">This is gritty growling, as requested.</td>
+    <td style="background-color:#ffc7ce;">The structure is very schematic and it is not changing fast compared to actual Grindcore music, which is generally much more erratic.</td>
+    <td style="background-color:#c6efce;">Yes, the mix sounds cavernous.</td>
+    <td style="background-color:#c6efce;">Yes, it definitely feels infernal.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio079.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio079.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Funeral Doom Metal, 35 bpm, electric organ, cavernous growling, chromatic dissonant riff, fuzzy mix, depressive.</td>
+    <td style="background-color:#ffffff;">A depressive Funeral Doom Metal song about being exiled in an asylum.</td>
+    <td style="background-color:#ffeb9c;">The overall mood of the piece is in line with Funeral Doom Metal, but the dynamics of the piece, the speed, and the singing style show influences from different subgenres of Metal.</td>
+    <td style="background-color:#ffc7ce;">More than double the asked bpm.</td>
+    <td style="background-color:#c6efce;">Yes, there is an electric organ. Unfortunately, it only appears in a brief section, instead of having a structural role.</td>
+    <td style="background-color:#ffeb9c;">The repetitiveness and the narrative style is in line with the genre, but the text sounds too mechanical and strange when it starts to repeat the expression “Be patient until the doctor’s amusement is complete”.</td>
+    <td style="background-color:#ffc7ce;">The voice sounds very obviously AI generated.</td>
+    <td style="background-color:#ffeb9c;">The introductory riff plays with the stereotyped chromatic dissonance employed in this type of metal. However, note how the riff evolves in a very consonant progression of minor arpeggios throughout of the piece. The chromatic nature of this type of music is slowly smoothed.</td>
+    <td style="background-color:#ffc7ce;">The mix does not sound fuzzy. This style of music is often intentionally lo-fi, while this piece is mixed in the same clean way a Metalcore piece would be.</td>
+    <td style="background-color:#ffeb9c;">It feels depressive, but also angry. The proper mood of Funeral Doom Metal is one in which rage has already been superseded by a sense of impotence and depression.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio080.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio080.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Ska Punk, 165 bpm, trombone, sparkling fast male singing, minor tonality, VHS recording, rebellious.</td>
+    <td style="background-color:#ffffff;">A rebellious Ska Punk song in French satirizing nationalism.</td>
+    <td style="background-color:#c6efce;">This follows all the tropes of Ska Punk.</td>
+    <td style="background-color:#c6efce;">Correct bpm.</td>
+    <td style="background-color:#c6efce;">Yes there is a trombone (a soprano, it seems).</td>
+    <td style="background-color:#ffc7ce;">The lyrics look as a goofy AI attempt to do satire, ending up sounding strange and unrealistic.</td>
+    <td style="background-color:#ffeb9c;">The vocal style is correct, but it sounds AI generated.</td>
+    <td style="background-color:#ffc7ce;">The tonality is major, not minor.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a VHS recording.</td>
+    <td style="background-color:#ffc7ce;">It sounds more sarcastic and playful than really rebellious.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio081.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio081.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Doo-Wop, 75 bpm, double bass, four-part harmonized singing, voices slightly out of tune, spring reverb, sentimental.</td>
+    <td style="background-color:#ffffff;">A sentimental Doo-Wop song about caregiving for aging parents.</td>
+    <td style="background-color:#ffeb9c;">The piece is in the right sonic domain, as it tries to mimic several tropes of Doo-Wop music, while missing others. The track has many sonic artifacts that in some parts it sounds as if it was an electronic piece rather than an acoustic recording, compromising the perception of the piece as a genuine Doo-Wop song.</td>
+    <td style="background-color:#c6efce;">Correct bpm.</td>
+    <td style="background-color:#c6efce;">It is mostly buried behind sonic artifacts, but there is indeed a double bass.</td>
+    <td style="background-color:#c6efce;">The lyrics match the prompt in an acceptable way.</td>
+    <td style="background-color:#ffc7ce;">The style of harmonization and singing is correct, but the voice sound awful. The model is struggling to give a good rendition of this style of vocals. Additionally, the chosen harmonies for some parts of the lyrics are paradoxical: the choir is singing about a parent becoming physically fragile with the happiness of someone singing about falling in love. Involuntarily, this comes out as a Doo-Wop parody as those written by Frank Zappa.</td>
+    <td style="background-color:#ffc7ce;">The voices are not out of tune, even if they sound off.</td>
+    <td style="background-color:#ffc7ce;">I cannot hear a spring reverb in this song.</td>
+    <td style="background-color:#ffc7ce;">It is somewhat sentimental, but there is a conceptual difference between the music and the text, to the point that this feels parodistic.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio082.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio082.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Dangdut, 118 bpm, suling bamboo flute, nasal ornamented female singing, syncopated, clean analog production, sorrowful.</td>
+    <td style="background-color:#ffffff;">A sorrowful Dangdut piece in Bahasa about a broken relationship.</td>
+    <td style="background-color:#c6efce;">Dangdut is a diverse form of fusion pop from Indonesia, comprising a large set of influences. This piece exhibits some of the basic elements of Dangdut, such as kendang patterns, melismatic singing, suling flute melodies, and Hindustani and Arabic influences. To me, this sounds as a plausible Dangdut song –however, note that this is the genre I know less in the entire corpus: a native Indonesian listener might perceive this track very differently.</td>
+    <td style="background-color:#c6efce;">Correct bpm.</td>
+    <td style="background-color:#c6efce;">Yes, there is a suling flute.</td>
+    <td style="background-color:#ffeb9c;">The lyrics are very simple and at the same time very metaphorical. Dangdut lyrics are more typically more concrete and more extensive. The end of a love story is represented here through a very compressed set of images; Dangut would use a more colloquial language and be more explicit in expressing emotions.</td>
+    <td style="background-color:#ffeb9c;">The voice sounds properly ornamented, but the timbre is not particularly nasal as requested.</td>
+    <td style="background-color:#ffeb9c;">Only the kendang patterns are syncopated, all the rest sounds very straight.</td>
+    <td style="background-color:#ffc7ce;">It sounds as a digital production, not an analog one.</td>
+    <td style="background-color:#ffeb9c;">It feels somewhat sorrowful, but I find it at the same time too upbeat and animated.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio083.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio083.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Levenslied, 95 bpm, barrel organ, heartfelt male voice, three-chord harmonic progression, vinyl transfer, passionate.</td>
+    <td style="background-color:#ffffff;">A passionate Levenslied in Dutch about family struggles and reconciliation.</td>
+    <td style="background-color:#ffeb9c;">This is fundamentally an early-1950s light pop song based on a Waltz. This is compatible with Levenslied, as, especially before the rise of rock music, it employed this kind of rhythms and arrangements. The choice of this specific style is probably related to the request of including a barrel organ. There is a strong dissonance between the text and the music, as the lyrics sound starkly contemporary.</td>
+    <td style="background-color:#ffc7ce;">This is considerably slower than it should be.</td>
+    <td style="background-color:#ffeb9c;">There is an organ-like sounds, but it is timbrically closer to an electric organ emulating a pipe organ, than a barrel organ.</td>
+    <td style="background-color:#ffc7ce;">The lyrics are absolutely meaningless, as they consist in an accumulation of half-told episodes where too much is missing. It sounds as a pile of incomplete, fragmented images. A Levenslied would rather tell a unitary, understandable story.</td>
+    <td style="background-color:#ffeb9c;">It is an heartfelt male voice as requested, but it is very obviously AI-generated. The pronunciation sound strange, as it is a voice from the mid of the 20th century trying to speak in a colloquial 21st century language.</td>
+    <td style="background-color:#c6efce;">It seems that it is only employing three chords.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a vynil transfer.</td>
+    <td style="background-color:#ffeb9c;">I do not find it particularly passionate.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio084.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio084.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Shatta, 99 bpm, rimshot, rapid male toasting, eclectic metric shifts in voice, heavy compression, sensual.</td>
+    <td style="background-color:#ffffff;">A sensual Shatta track with rapid male toasting in Martinican Creole.</td>
+    <td style="background-color:#ffc7ce;">While some parts of the vocals are Dancehall infused, this is not really Dancehall. The mood and the arrangement is closer to other types of Caribbean Music, such as Zouk, than Shatta. The chorus is Pop music and the lead synth melody is very much outside of the context of Shatta, which typically has a darker, more minimalistic sound design and arrangement.</td>
+    <td style="background-color:#c6efce;">97 bpm, not 99, but close enough.</td>
+    <td style="background-color:#ffc7ce;">I hear snare sounds, but not rimshots.</td>
+    <td style="background-color:#c6efce;">The text is very formulaic, but looks plausible.</td>
+    <td style="background-color:#ffc7ce;">There is some toasting, but it is not rapid, and for the rest it is more singing than rapping.</td>
+    <td style="background-color:#ffc7ce;">There are no eclectic metrical shifts.</td>
+    <td style="background-color:#ffc7ce;">There is not much dynamic range in the piece, but it is not heavily compressed.</td>
+    <td style="background-color:#ffc7ce;">The text complies with a stereotypical idea of Caribbean sensuality, but I find the singing and the mood of the track festive, not sensual.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio085.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio085.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Afropiano, 115 bpm, shakers, soulful male vocals, 3-step percussive pattern, wet mix, smooth.</td>
+    <td style="background-color:#ffffff;">A smooth Afropiano piece in Xhosa celebrating nightlife.</td>
+    <td style="background-color:#c6efce;">This sounds as a very plausible Afropiano piece: the groove, the Afrohouse bassline, the drum kit sounds, the vocal phrasings, all point to Afropiano music. The harmonic progression is more distinctly Afrohouse, while most of Afropiano would rather use jazzy melodies coming from Amapiano.</td>
+    <td style="background-color:#c6efce;">Correct bpm.</td>
+    <td style="background-color:#c6efce;">Yes, there are shakers.</td>
+    <td style="background-color:#c6efce;">The lyrics look very generic in content, but the style, the language, and the theme are exactly as requested in the prompt.</td>
+    <td style="background-color:#c6efce;">The vocals are soulful and exhibit a plausible kind of electronic processing that. Choirs and overdubs are also in line with the context of the piece. Note that I do not have enough knowledge in Xhosa phonetics to assess the accuracy of the pronunciation.</td>
+    <td style="background-color:#ffc7ce;">3-step is a kick pattern, but there is no kick sound in this piece, just a log drum-like bassline.</td>
+    <td style="background-color:#c6efce;">There is quite a lot of reverb, therefore yes, I would call it a wet mix.</td>
+    <td style="background-color:#c6efce;">It sounds smooth.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio086.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio086.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Psychedelic Soul, 85 bpm, wurlitzer, falsetto singing, seventh chords, tube saturation, hazy.</td>
+    <td style="background-color:#ffffff;">A hazy Psychedelic Soul song about an afrofuturist theory of parallel universes.</td>
+    <td style="background-color:#ffeb9c;">This sounds like a laid-out Nu Soul song more than Psychedelic Soul. The music is basically a modern beat with bass, drums and keyboards, having no elements of Psych Rock music. The structure of the piece is also weird: after the first chorus, it just keeps repeating the same section over and over.</td>
+    <td style="background-color:#c6efce;">2 bpm faster, but accurate enough.</td>
+    <td style="background-color:#c6efce;">Yes, there is a Wurlitzer.</td>
+    <td style="background-color:#ffc7ce;">The text is not explicitly afrofuturist and it is very redundant and schematic.</td>
+    <td style="background-color:#ffeb9c;">There is falsetto singing, but it sounds obviously AI-generated.</td>
+    <td style="background-color:#c6efce;">Yes, there are some seventh chords.</td>
+    <td style="background-color:#ffc7ce;">No signs of tube saturation.</td>
+    <td style="background-color:#ffeb9c;">Despite not being Psych Soul, the mood is somewhat hazy.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio087.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio087.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Blackgaze, 115 bpm, tremolo picking guitar, locrian diminished, detailed mix, menacing.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">There are only very small sections in which this piece might resemble Blackgaze; for the rest, it sounds as a Post-Rock piece. While Blackgaze can have surprisingly consonant harmonies sometimes, the harmonic and melodic arrangement of this piece are too clean and pop. This piece completely lacks the Black Metal component of Blackgazie, with the exception of a brief distorted section near the beginning.</td>
+    <td style="background-color:#c6efce;">Slightly slower, but accurate enough.</td>
+    <td style="background-color:#ffeb9c;">There is only a section in which it sounds like the guitar could be tremolo-picked.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">It is not in locrian diminished mode.</td>
+    <td style="background-color:#ffc7ce;">The mix is not detailed, in some parts it is blurry and sounds awful, especially the guitars.</td>
+    <td style="background-color:#ffc7ce;">It does not sound menacing at all.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio088.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio088.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Nueva Trova, 92 bpm, claves, warm male singing, complex harmonic progression, plate reverb, introspective.</td>
+    <td style="background-color:#ffffff;">An introspective Nueva Trova song in Cuban Spanish reflecting on the existential implications of living in an unrealized political utopia.</td>
+    <td style="background-color:#ffc7ce;">This sounds as a modern Latin folk-pop songwriting with obvious influences from Nueva Canción. The arrangement, the chorus, the style of singing, and the overall sound do not feel particularly rooted in Nueva Trova.</td>
+    <td style="background-color:#c6efce;">Correct bpm.</td>
+    <td style="background-color:#ffc7ce;">I hear several Latin percussions, but not claves.</td>
+    <td style="background-color:#c6efce;">Maybe the text sounds a bit generalized, as it does not reference any concrete historical situation, but for the rest it definitely picks the right register and style, even finding good metrical solutions. I find the verse “En la esquina hacen la cola / por un trozo de paciencia.” a very subtle invention to express the issues related to Cuban political and material isolation.</td>
+    <td style="background-color:#ffeb9c;">It sounds AI-generated, but it also sounds warm as requested.</td>
+    <td style="background-color:#ffc7ce;">The harmonic progression is not complex.</td>
+    <td style="background-color:#ffc7ce;">No trace of plate reverb.</td>
+    <td style="background-color:#ffc7ce;">Even if the text is sung from a first-person perspective, this does not sound introspective.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio089.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio089.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Kizomba, 103 bpm, timbales, seductive female vocals, syncopated snare, bedroom studio production, hedonistic.</td>
+    <td style="background-color:#ffffff;">An hedonistic Kizomba piece in Angolan Portuguese about hugging your partner and dancing sensually.</td>
+    <td style="background-color:#c6efce;">The production style is maybe too clean and the vocal delivery a bit apathetic, but this is a Kizomba song. If put in a Spotify playlist without any further edit, I doubt most listener would question the origin of this track.</td>
+    <td style="background-color:#c6efce;">The bpm is correct.</td>
+    <td style="background-color:#c6efce;">Yes, there are timbales.</td>
+    <td style="background-color:#ffeb9c;">The text is in standard Portuguese, I did not find explicit markers of Angolan Portuguese. At the same time, as a Kizomba text it is perfect; it sounds a bit generic, but the prompt was indeed generic.</td>
+    <td style="background-color:#ffeb9c;">The voice is seductive, but also a bit lifeless. It sounds as a highly-processed voice and in that sense it might be perceived as realistic despite being a bit anesthetized.</td>
+    <td style="background-color:#ffc7ce;">There are no snare sounds.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a bedroom studio production.</td>
+    <td style="background-color:#ffeb9c;">It feels hedonistic, but also a bit cold.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio090.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio090.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Tishoumaren, 105 bpm, tende drum, husky male vocals, 6/8 meter, outdoor recording, entrancing.</td>
+    <td style="background-color:#ffffff;">An entrancing Tishoumaren piece in Tamasheq about spiritual searching.</td>
+    <td style="background-color:#ffc7ce;">While the guitar phrasings might resemble the Desert rock style of Tishoumaren, the piece is otherwise Arabic Pop more than anything else. The drums almost feel like an electronic beat using acoustic samples, more than an organic drumming.</td>
+    <td style="background-color:#c6efce;">Correct bpm.</td>
+    <td style="background-color:#ffc7ce;">No trace of tende drums.</td>
+    <td style="background-color:#ffc7ce;">The generated lyrics are about surviving in desert without enough water, not about spiritual searching.</td>
+    <td style="background-color:#ffeb9c;">The voice is indeed husky, but also very artificial.</td>
+    <td style="background-color:#ffc7ce;">It is a 4/4 meter, not 6/8.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as an outdoor recording.</td>
+    <td style="background-color:#ffc7ce;">It does not feel entrancing as a real Tishoumaren piece would sound.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio091.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio091.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Mahraganat, 135 bpm, darbouka, autotuned rapping, low dynamic range, clipped microphone, raw.</td>
+    <td style="background-color:#ffffff;">A raw Mahraganat track in Egyptian Arabic about street life and economic hardship in Cairo.</td>
+    <td style="background-color:#ffc7ce;">This is rapped in Egyptian, but it is not Mahraganat, as the rhythm of the beat has no trace of Arabic rhythms – it is just a standard Hip Hop beat.</td>
+    <td style="background-color:#ffeb9c;">This is a few bpm faster than it should be.</td>
+    <td style="background-color:#ffc7ce;">There is no darbouka.</td>
+    <td style="background-color:#ffeb9c;">The linguistic register seems credible to me and the theme is matched. It does not feel “raw” though, and it is even too thematically and formally balanced to feel genuine.</td>
+    <td style="background-color:#ffeb9c;">The vocals sound AI-generated, but the overall style is correct. Note that I cannot assess the correctness of pronunciation.</td>
+    <td style="background-color:#c6efce;">Yes, there is autotuned rapping.</td>
+    <td style="background-color:#ffc7ce;">None of the voices sound as if they were coming from a clipped microphone.</td>
+    <td style="background-color:#ffc7ce;">It does not feel raw in the vocal delivery nor in the beat.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio092.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio092.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Tizita, 74 bpm, krar, subtle romantic female vocals, 3/4 meter, cassette recording, regretful.</td>
+    <td style="background-color:#ffffff;">A regretful Tizita piece in Amharic about the unrelenting passing of time.</td>
+    <td style="background-color:#ffc7ce;">This sounds as a generic World Beat piece with a generic East African influence, but it has nothing to do with Tizita.</td>
+    <td style="background-color:#c6efce;">Correct bpm value.</td>
+    <td style="background-color:#ffc7ce;">There is no krar.</td>
+    <td style="background-color:#ffeb9c;">The writing style looks in line with modern Amharic poetic writing in the way each verse could have a literal meaning and a more philosophical one. At the same time, the text feels generic and very broad, which makes it feel AI-generated.</td>
+    <td style="background-color:#ffc7ce;">The vocals do not sound “subtle” and they are electronically processed, which is inappropriate for the context of the prompt.</td>
+    <td style="background-color:#ffc7ce;">It is 4/4, not 3/4.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a cassette recording.</td>
+    <td style="background-color:#ffc7ce;">It does not sound regretful, it sounds quiet and energically peaceful in a new age manner.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio093.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio093.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Shona Mbira Music, 128 bpm, interlocking polymeters, room ambience, calm.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">Despite containing mbiras playing interlocking patterns, the piece does not resemble actual Shona Mbira Music, but rather an Afro House track using mbira melodies. Despite the presence of mbiras, it feels as an electronic production in the way it is arranged and in the drum sounds.</td>
+    <td style="background-color:#c6efce;">It is in the correct bpm range.</td>
+    <td style="background-color:#c6efce;">The term “Shona Mbira” already refers to an instrument, therefore no additional information on instruments is provided in the prompt. As asked, there are mbiras in this track.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Shona Mbira Music can be both sung or instrumental. In this case, I asked an instrumental piece.</td>
+    <td style="background-color:#c6efce;">Yes, there are interlocking polymeters.</td>
+    <td style="background-color:#ffeb9c;">I can feel some sort of room ambience, but also the sensation of clinical electronic production.</td>
+    <td style="background-color:#ffc7ce;">The melodies feel calm, but the Afro House rhythmic pattern transform the piece into something more frenetic than calm.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio094.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio094.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Tuvan Throat Singing, slow tempo, jaw harp, slight accelerando, outdoor recording, delicate.</td>
+    <td style="background-color:#ffffff;">A delicate Tuvan Throat Singing piece in Tuvan imitating and reflecting upon the surrounding landscape.</td>
+    <td style="background-color:#ffc7ce;">The generated track is glitched: it starts normally (not as a Tuvan Throat Singing song though, but rather as New Age pop), and at 0:29 it suddenly stops and starts again, then at 0:59 it ends abruptly.</td>
+    <td style="background-color:#ffc7ce;">Tempo is variable in Tuvan Throat Singing, here I asked for a slow tempo. The time is fixed and the piece does not take form enough before glitching to properly assess the tempo accuracy.</td>
+    <td style="background-color:#ffc7ce;">There is no jaw harp.</td>
+    <td style="background-color:#ffc7ce;">The text is in Tuvan as asked, but it feels very generic. Someone descripting the surrounding landscape in a song would not stop at just saying that the river is flowing and that the wind is whispering.</td>
+    <td style="background-color:#ffc7ce;">The name of the genre already refers to a specific style of singing, thus no additional information should be required. The singing in the generated piece is not throat singing.</td>
+    <td style="background-color:#ffc7ce;">There is no accelerando.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as an outdoor recording.</td>
+    <td style="background-color:#ffc7ce;">It does not feel delicate, especially with such abrupt interruptions.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio095.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio095.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Khakas Traditional Music, variable tempo, chatkhan, overtone-rich male throat singing, many grace notes in the melody, radio session, shamanistic.</td>
+    <td style="background-color:#ffffff;">A shamanistic Khakas Traditional Music piece in Khakas about the spirits of the taiga.</td>
+    <td style="background-color:#ffc7ce;">This is what an Hollywood movie would put as a “shamanistic song” in a movie, completely ignoring any specific musical feature of Khakas Traditional Music.</td>
+    <td style="background-color:#ffeb9c;">Khakas Traditional Music typically has a variable tempo. The only temporal variation here is the ending.</td>
+    <td style="background-color:#ffc7ce;">There is no chatkhan in this piece.</td>
+    <td style="background-color:#ffc7ce;">The text is extremely short and for the most part it is just repeating the same verse, which could be translated as “To the great black mountain”. This does not seem to comply to the prompt.</td>
+    <td style="background-color:#ffeb9c;">The singer is indeed using overtone-rich throat singing techniques. At the same time, in some parts it sounds as if the singer is doubled an octave louder, in a way that feels artificial and unrealistic.</td>
+    <td style="background-color:#ffc7ce;">There are not many grace notes in the melody.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a radio session.</td>
+    <td style="background-color:#ffc7ce;">This sounds as a cinematic imitation, not something truly shamanistic.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio096.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio096.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Dhrupad, tanpura, profound melismatic singing, raag bhairav, polished studio recording, transcendent.</td>
+    <td style="background-color:#ffffff;">A transcendent poem for Dhrupad singing in Sanskrit.</td>
+    <td style="background-color:#ffc7ce;">This could be a devotional new age song, but it bears no relation whatsoever with classical Dhrupad singing, neither in the singing style nor in the music. The vocal lines are not in Dhrupad style, it is too fast, and it even has drums, flutes, and electronic keyboards, which are not included in Dhrupad music. Additionally, this is a song form, while Dhrupad are very long meditative pieces.</td>
+    <td style="background-color:#ffc7ce;">No tempo indication: Dhrupad often has no underlying perceivable pulse. This piece has a fixed tempo and even drums.</td>
+    <td style="background-color:#ffc7ce;">An electronic pad sound is functionally substituting the tanpuras, which are absent.</td>
+    <td style="background-color:#ffc7ce;">The lyrics are a mixture of vague imageries related to Hinduism. They have a Western pop song structure, even including structural tags such as “[Chorus]”.</td>
+    <td style="background-color:#ffc7ce;">It is not singing profoundly. There are some melismatic passages, but it is not Dhrupad singing.</td>
+    <td style="background-color:#ffc7ce;">It is not a raag Bhairav.</td>
+    <td style="background-color:#ffeb9c;">It is a polished studio recording, but of a completely different kind compared to what has been asked in the prompt.</td>
+    <td style="background-color:#ffc7ce;">It does not feel transcendent at all.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio097.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio097.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Dennery Segment, 140 bpm, distorted cowbell, fast-paced rapping, repetitive structure with small variations, bedroom studio production, boastful.</td>
+    <td style="background-color:#ffffff;">A nasty, boastful Dennery Segment track in Saint Lucian Creole.</td>
+    <td style="background-color:#ffc7ce;">This has nothing to do with Dennery Segment, which is a form of Kuduro music born in Saint Lucia. This track has a classic straight EDM kick-snare pattern, while Kuduro has a completely different rhythmic structure. The production style and the type of singing are also completely unrelated to Dennery Segment.</td>
+    <td style="background-color:#c6efce;">Slightly faster, but accurate enough.</td>
+    <td style="background-color:#ffc7ce;">There are no distorted cowbells.</td>
+    <td style="background-color:#ffc7ce;">This is just repeating the same couple of verses over and over dozens of times. It is not a text fitting Dennery Segment.</td>
+    <td style="background-color:#ffc7ce;">There is no fast paced rapping in the piece.</td>
+    <td style="background-color:#c6efce;">The structure is even too redundant, but I guess it respects the request of the prompt.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as a bedroom studio production.</td>
+    <td style="background-color:#ffeb9c;">It is somewhat boastful, but it is so repetitive that it does not feel enough incisive.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio098.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio098.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Boogaloo, 124 bpm, flugelhorn, swinged rhythm, analog recording, zestful.</td>
+    <td style="background-color:#ffffff;">None.</td>
+    <td style="background-color:#ffc7ce;">This is Nu Jazz, not Boogaloo. The arrangement and the harmony sound as a modern fusion production, not as a genuine Boogaloo track. Aside from some congas, the Afro-Cuban influence is absent.</td>
+    <td style="background-color:#c6efce;">Correct bpm.</td>
+    <td style="background-color:#c6efce;">Yes, there is a flugelhorn.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffffff;">Instrumental.</td>
+    <td style="background-color:#ffc7ce;">The rhythm is not swinged, it is a straight funky-fusion rhythm with some Latin congas on top of it.</td>
+    <td style="background-color:#ffc7ce;">It does not sound as an analog recording.</td>
+    <td style="background-color:#ffeb9c;">I guess it could be called zestful, but it is so stereotypically similar to some lounge jazz music that it also feels empty and lifeless. This is music for waiting rooms.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio099.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio099.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Conjunto Andino, 130 bpm, Andean pan pipe, polyphonic male singing, 3/4 meter, overdubbed, forlorn.</td>
+    <td style="background-color:#ffffff;">A forlorn Conjunto Andino song in Quechua about the hardship of a solitary voyage.</td>
+    <td style="background-color:#ffc7ce;">It starts as a new age track, then suddenly becomes kitschy sentimental pop. This feels absurd and very far from Conjunto Andino.</td>
+    <td style="background-color:#ffc7ce;">This is 88 bpm circa, not 130.</td>
+    <td style="background-color:#c6efce;">Yes, there is an Andean pan pipe.</td>
+    <td style="background-color:#ffeb9c;">The text is in Quechua, but it feels very generic with regards to the requested theme.</td>
+    <td style="background-color:#ffc7ce;">There is no polyphonic singing.</td>
+    <td style="background-color:#ffc7ce;">It is in 4/4, not 3/4.</td>
+    <td style="background-color:#ffeb9c;">It sounds as there might be some overdubs, but very sparingly.</td>
+    <td style="background-color:#ffc7ce;">The powerful male vocals sound all but forlorn. I find this piece to be unsettling.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff;"><b>audio100.mp3</b><br><audio controls preload="none" style="width:180px;"><source src="https://archive.org/download/illusion_of_control_corpus/audio100.mp3" type="audio/mpeg"></audio></td>
+    <td style="background-color:#ffffff;">Currulao, 155 bpm, marimba de chonta, powerful female singer with choir, antiphonal structure, studio recording, communal.</td>
+    <td style="background-color:#ffffff;">A communal Currulao antiphonal song expressing the connection of the Afro-Colombian community with the surrounding fluvial and maritime landscape.</td>
+    <td style="background-color:#ffeb9c;">It starts with some kind of verisimilitude, but then it develops in a much less credible way. The vocal call and response is correct, but the form of the song is strange and it mostly lacks the harmonic-melodic content of the marimbas de chonta, which are fundamental in Currulao. While being vocally warm, this piece sounds eerily incomplete.</td>
+    <td style="background-color:#ffc7ce;">This is around 118 bpm, not 155.</td>
+    <td style="background-color:#ffeb9c;">Some marimbas appear just at the beginning, but then they disappear. They are not playing Currulao melodic lines.</td>
+    <td style="background-color:#c6efce;">The lyrics seem to be appropriate to what requested in the prompt.</td>
+    <td style="background-color:#c6efce;">The singing is harmonically and metrically correct.</td>
+    <td style="background-color:#c6efce;">Yes, the structure is antiphonal.</td>
+    <td style="background-color:#ffeb9c;">It sounds as a studio recording, but it also has some strange artifacts, especially at the ending, revealing that it is AI generated.</td>
+    <td style="background-color:#ffc7ce;">Considering it lacks half of the instrumentalist a Currulao band would have, this sounds empty and incomplete, in a way that cannot properly convey a communal feeling to me.</td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+</body>
+</html>
